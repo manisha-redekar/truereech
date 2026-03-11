@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import MotionSection from "@/components/MotionSection";
 
 const CTASection = () => {
   const [email, setEmail] = useState("");
 
   return (
     <section className="py-20 px-4 text-center">
-      <div className="container mx-auto max-w-2xl">
+      <MotionSection className="container mx-auto max-w-2xl">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Curious Where Your SaaS Could Be Getting Discovered?
         </h2>
@@ -23,7 +24,7 @@ const CTASection = () => {
           />
           <Button>Request Audit</Button>
         </div>
-      </div>
+      </MotionSection>
     </section>
   );
 };
