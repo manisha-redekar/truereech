@@ -1,0 +1,131 @@
+import { Link } from "react-router-dom";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
+import heroImg from "@/assets/hero-illustration.png";
+import iconAi from "@/assets/icon-ai-visibility.png";
+import iconReddit from "@/assets/icon-reddit.png";
+import iconSeo from "@/assets/icon-seo.png";
+
+const services = [
+  {
+    icon: iconAi,
+    title: "AI Visibility",
+    description: "Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.",
+    bullets: ["Your SaaS gets recommended by AI answers.", "Appear in 'best tools' answers.", "Increase AI-driven traffic."],
+  },
+  {
+    icon: iconReddit,
+    title: "Reddit Marketing",
+    description: "Identify relevant subreddits and engage in discussions. Participate authentically, providing actual value.",
+    bullets: ["Encourage natural mentions and recommendations of your SaaS.", "Drive targeted community traffic."],
+  },
+  {
+    icon: iconSeo,
+    title: "SEO Blogs & Content",
+    description: "Build authority and organic traffic with strategic content designed to rank.",
+    bullets: ["Rank on Google for key industry searches.", "Earn organic traffic that compounds over time."],
+  },
+];
+
+const plans = [
+  { name: "Starter", price: "$1,500/month", features: ["AI Visibility Audit", "Reddit Community Research", "4 SEO Blog articles"] },
+  { name: "Growth", price: "$3,000/month", features: ["Advanced AI Visibility Strategy", "Reddit Community Engagement", "8 SEO Blog Articles/mo"] },
+  { name: "Custom", price: "For scaling SaaS", features: ["Contact us for a personalised plan for SaaS companies."], custom: true },
+];
+
+const Services = () => (
+  <div className="min-h-screen flex flex-col">
+    <Navbar />
+
+    {/* Hero */}
+    <section className="gradient-hero py-16 md:py-24 px-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            Our <span className="text-primary">Services</span>
+          </h1>
+          <p className="text-muted-foreground text-lg mb-4">
+            We focus on getting your SaaS product discovered where users actually search for solutions:
+          </p>
+          <p className="text-muted-foreground mb-8">
+            AI answers, community discussions, and high-authority content.
+          </p>
+          <div className="flex gap-4 flex-wrap">
+            <Button size="lg" asChild><Link to="/about">Get Visibility Audit</Link></Button>
+            <Button size="lg" variant="outline">Get Started</Button>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <img src={heroImg} alt="Services illustration" className="w-full max-w-md" />
+        </div>
+      </div>
+    </section>
+
+    {/* AI Visibility Detail */}
+    <section className="py-16 px-4">
+      <div className="container mx-auto max-w-3xl">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">AI Visibility</h2>
+        <p className="text-muted-foreground mb-6">
+          Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.
+        </p>
+        <h3 className="text-xl font-bold mb-4">What We Do:</h3>
+        <ul className="space-y-3 mb-8">
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI visibility audit of your product and competitors.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI content optimization that AI tools prefer learning from.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Earn mentions of your brand on high-trust websites.</li>
+        </ul>
+      </div>
+    </section>
+
+    {/* Service Cards */}
+    <section className="py-16 px-4 bg-accent/30">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+        {services.map((s) => (
+          <div key={s.title} className="gradient-card rounded-xl p-6 shadow-card text-center">
+            <img src={s.icon} alt={s.title} className="w-20 h-20 mx-auto mb-4 object-contain" />
+            <h3 className="text-lg font-bold mb-2">{s.title}</h3>
+            <p className="text-sm text-muted-foreground mb-4">{s.description}</p>
+            <ul className="text-sm text-left space-y-2 mb-6">
+              {s.bullets.map((b) => (
+                <li key={b} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{b}</li>
+              ))}
+            </ul>
+            <Button className="w-full">Get Started</Button>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Pricing */}
+    <section className="py-16 px-4">
+      <div className="container mx-auto text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">Pricing Plans</h2>
+        <p className="text-muted-foreground mb-12">Simple, transparent pricing based on your SaaS growth stage.</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {plans.map((p) => (
+            <div key={p.name} className="gradient-card rounded-xl p-6 shadow-card text-left">
+              <h3 className="text-xl font-bold">{p.name}</h3>
+              <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
+              <ul className="space-y-2 text-sm mb-6">
+                {p.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
+                ))}
+              </ul>
+              <Button variant={p.custom ? "outline" : "default"} className="w-full">
+                {p.custom ? "Contact Us" : "Get Started"}
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <CTASection />
+    <Footer />
+  </div>
+);
+
+export default Services;
