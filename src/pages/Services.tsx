@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
+import MotionSection from "@/components/MotionSection";
 import heroImg from "@/assets/hero-illustration.png";
 import iconAi from "@/assets/icon-ai-visibility.png";
 import iconReddit from "@/assets/icon-reddit.png";
@@ -11,20 +12,17 @@ import iconSeo from "@/assets/icon-seo.png";
 
 const services = [
   {
-    icon: iconAi,
-    title: "AI Visibility",
+    icon: iconAi, title: "AI Visibility",
     description: "Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.",
     bullets: ["Your SaaS gets recommended by AI answers.", "Appear in 'best tools' answers.", "Increase AI-driven traffic."],
   },
   {
-    icon: iconReddit,
-    title: "Reddit Marketing",
+    icon: iconReddit, title: "Reddit Marketing",
     description: "Identify relevant subreddits and engage in discussions. Participate authentically, providing actual value.",
     bullets: ["Encourage natural mentions and recommendations of your SaaS.", "Drive targeted community traffic."],
   },
   {
-    icon: iconSeo,
-    title: "SEO Blogs & Content",
+    icon: iconSeo, title: "SEO Blogs & Content",
     description: "Build authority and organic traffic with strategic content designed to rank.",
     bullets: ["Rank on Google for key industry searches.", "Earn organic traffic that compounds over time."],
   },
@@ -43,7 +41,7 @@ const Services = () => (
     {/* Hero */}
     <section className="gradient-hero py-16 md:py-24 px-4">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
+        <MotionSection>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Our <span className="text-primary">Services</span>
           </h1>
@@ -57,16 +55,18 @@ const Services = () => (
             <Button size="lg" asChild><Link to="/about">Get Visibility Audit</Link></Button>
             <Button size="lg" variant="outline">Get Started</Button>
           </div>
-        </div>
-        <div className="flex justify-center">
-          <img src={heroImg} alt="Services illustration" className="w-full max-w-md" />
-        </div>
+        </MotionSection>
+        <MotionSection delay={0.2} direction="right">
+          <div className="flex justify-center">
+            <img src={heroImg} alt="Services illustration" className="w-full max-w-md" />
+          </div>
+        </MotionSection>
       </div>
     </section>
 
     {/* AI Visibility Detail */}
     <section className="py-16 px-4">
-      <div className="container mx-auto max-w-3xl">
+      <MotionSection className="container mx-auto max-w-3xl">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">AI Visibility</h2>
         <p className="text-muted-foreground mb-6">
           Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.
@@ -77,39 +77,43 @@ const Services = () => (
           <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI content optimization that AI tools prefer learning from.</li>
           <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Earn mentions of your brand on high-trust websites.</li>
         </ul>
-      </div>
+      </MotionSection>
     </section>
 
     {/* Service Cards */}
     <section className="py-16 px-4 bg-accent/30">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
-        {services.map((s) => (
-          <div key={s.title} className="gradient-card rounded-xl p-6 shadow-card text-center">
-            <img src={s.icon} alt={s.title} className="w-20 h-20 mx-auto mb-4 object-contain" />
-            <h3 className="text-lg font-bold mb-2">{s.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4">{s.description}</p>
-            <ul className="text-sm text-left space-y-2 mb-6">
-              {s.bullets.map((b) => (
-                <li key={b} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{b}</li>
-              ))}
-            </ul>
-            <Button className="w-full">Get Started</Button>
-          </div>
+        {services.map((s, i) => (
+          <MotionSection key={s.title} delay={i * 0.15}>
+            <div className="gradient-card rounded-xl p-6 shadow-card text-center h-full flex flex-col">
+              <img src={s.icon} alt={s.title} className="w-20 h-20 mx-auto mb-4 object-contain" />
+              <h3 className="text-lg font-bold mb-2">{s.title}</h3>
+              <p className="text-sm text-muted-foreground mb-4">{s.description}</p>
+              <ul className="text-sm text-left space-y-2 mb-6 flex-1">
+                {s.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{b}</li>
+                ))}
+              </ul>
+              <Button className="w-full">Get Started</Button>
+            </div>
+          </MotionSection>
         ))}
       </div>
     </section>
 
     {/* Pricing */}
     <section className="py-16 px-4">
-      <div className="container mx-auto text-center">
+      <MotionSection className="container mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Pricing Plans</h2>
         <p className="text-muted-foreground mb-12">Simple, transparent pricing based on your SaaS growth stage.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {plans.map((p) => (
-            <div key={p.name} className="gradient-card rounded-xl p-6 shadow-card text-left">
+      </MotionSection>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+        {plans.map((p, i) => (
+          <MotionSection key={p.name} delay={i * 0.15}>
+            <div className="gradient-card rounded-xl p-6 shadow-card text-left h-full flex flex-col">
               <h3 className="text-xl font-bold">{p.name}</h3>
               <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
-              <ul className="space-y-2 text-sm mb-6">
+              <ul className="space-y-2 text-sm mb-6 flex-1">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
                 ))}
@@ -118,8 +122,8 @@ const Services = () => (
                 {p.custom ? "Contact Us" : "Get Started"}
               </Button>
             </div>
-          ))}
-        </div>
+          </MotionSection>
+        ))}
       </div>
     </section>
 
