@@ -46,7 +46,7 @@ const Services = () => (
             Our <span className="text-primary">Services</span>
           </h1>
           <p className="text-muted-foreground text-lg mb-4">
-            We focus on getting your SaaS product discovered where users actually search for solutions:
+            We focus on getting your product discovered where users actually search for solutions:
           </p>
           <p className="text-muted-foreground mb-8">
             AI answers, community discussions, and high-authority content.
