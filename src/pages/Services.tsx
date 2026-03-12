@@ -83,9 +83,10 @@ const Services = () => (
         </p>
         <h3 className="text-xl font-bold mb-4">What We Do:</h3>
         <ul className="space-y-3 mb-8">
-          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI visibility audit of your product and competitors.</li>
-          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI content optimization that AI tools prefer learning from.</li>
-          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Earn mentions of your brand on high-trust websites.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> AI visibility audit of your brand, product, and competitors.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Optimize content so AI tools like ChatGPT and Perplexity can reference and learn from it.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Strategic Reddit engagement to position your product in real community discussions.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> SEO-driven blog and website content designed for long-term discovery.</li>
         </ul>
       </MotionSection>
     </section>
