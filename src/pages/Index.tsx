@@ -30,7 +30,7 @@ const Index = () => (
             <span className="text-primary">Answers</span>, <span className="text-primary">Reddit Discussions</span>, and Search.
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-            We place your SaaS product where users are <em className="font-semibold not-italic text-foreground">actually</em> searching
+            We place your SaaS product where users are <span className="font-semibold text-foreground">actually</span> searching
             for solutions — in AI-generated answers, real community conversations, and high-authority content.
           </p>
           <div className="flex gap-4 flex-wrap">
