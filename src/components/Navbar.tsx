@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Button asChild>
-            <Link to="/about">Get Visibility Audit</Link>
+            <Link to="/about">Connect Now</Link>
           </Button>
         </div>
 
