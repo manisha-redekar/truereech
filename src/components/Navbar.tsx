@@ -17,10 +17,16 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <Link to="/" className="text-2xl font-bold">
-          <span className="text-primary">True</span>
-          <span className="text-foreground">Reech</span>
-        </Link>
+        <Link to="/" className="flex flex-col items-start leading-tight">
+  <span className="text-2xl font-bold">
+    <span className="text-primary">True</span>
+    <span className="text-foreground">Reech</span>
+  </span>
+
+  <span className="text-[11px] text-muted-foreground">
+    Where True Reach Happens
+  </span>
+</Link>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
