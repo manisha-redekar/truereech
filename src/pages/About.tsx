@@ -21,9 +21,9 @@ const About = () => (
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
             About <span className="text-primary">TrueReech</span>
           </h1>
-          <p className="text-lg font-medium mb-4">Smart brand visibility for modern SaaS companies.</p>
+          <p className="text-lg font-medium mb-4">Smart brand visibility for modern SaaS companies and D2C brands.</p>
           <p className="text-muted-foreground mb-8">
-            TrueReech was founded with a simple goal: to revolutionize how SaaS startups get discovered by placing them where users are actually searching for solutions today.
+            TrueReech was founded with a simple goal: to change how brands get discovered online by positioning them where real conversations and searches happen today AI answers, Reddit discussions, and organic search.
           </p>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
@@ -41,7 +41,7 @@ const About = () => (
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Our Mission</h2>
           <h3 className="text-xl font-bold mb-4">Helping SaaS Products Get Discovered in a Shifting Landscape</h3>
           <p className="text-muted-foreground mb-10">
-            TrueReech was founded with a simple goal: to revolutionize how SaaS startups get discovered by placing them where users are actually searching for solutions today.
+            TrueReech was founded with a simple goal: to change how brands get discovered online by positioning them where real conversations and searches happen today AI answers, Reddit discussions, and organic search.
           </p>
         </MotionSection>
 
