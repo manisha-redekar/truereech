@@ -57,7 +57,7 @@ const Index = () =>
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Discovery Is Changing. Search Is No Longer Just Google.</h2>
         <p className="text-muted-foreground mb-6">People are now asking AI tools questions like:</p>
         <RotatingSearchQuery />
-        <p className="font-semibold text-lg mt-6">Real users are asking for tools — right now.</p>
+        <p className="font-semibold text-lg mt-6">Real users are asking for tools right now.</p>
       </MotionSection>
     </section>
 
