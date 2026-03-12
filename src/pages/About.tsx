@@ -23,7 +23,8 @@ const About = () => (
           </h1>
           <p className="text-lg font-medium mb-4">Smart brand visibility for modern SaaS companies and D2C brands.</p>
           <p className="text-muted-foreground mb-8">
-            TrueReech was founded with a simple goal: to change how brands get discovered online by positioning them where real conversations and searches happen today AI answers, Reddit discussions, and organic search.
+            TrueReech helps brands become discoverable in the places where modern product discovery actually happens AI answers, Reddit discussions, and organic search.
+Instead of relying only on traditional SEO, we focus on positioning brands inside real conversations and recommendation systems where customers actively research solutions.
           </p>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
