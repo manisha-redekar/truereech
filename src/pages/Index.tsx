@@ -13,13 +13,13 @@ import iconReddit from "@/assets/icon-reddit.png";
 import iconSeo from "@/assets/icon-seo.png";
 
 const services = [
-  { icon: iconAi, title: "AI Visibility", description: "Get seen in AI-generated answers by earning AI trust signals and building authority." },
-  { icon: iconReddit, title: "Reddit Marketing", description: "Engage in honest community discussions while driving targeted traffic." },
-  { icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content." },
-];
+{ icon: iconAi, title: "AI Visibility", description: "Get seen in AI-generated answers by earning AI trust signals and building authority." },
+{ icon: iconReddit, title: "Reddit Marketing", description: "Engage in honest community discussions while driving targeted traffic." },
+{ icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content." }];
 
-const Index = () => (
-  <div className="min-h-screen flex flex-col">
+
+const Index = () =>
+<div className="min-h-screen flex flex-col">
     <Navbar />
 
     {/* Hero */}
@@ -27,7 +27,7 @@ const Index = () => (
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <MotionSection>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            Help Your <span className="text-primary">SaaS</span> Get Discovered in AI{" "}
+            Help Your <span className="text-primary">Brand</span> Get Discovered in AI{" "}
             <span className="text-primary">Answers</span>, <span className="text-primary">Reddit Discussions</span>, and Search.
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg">
@@ -70,18 +70,18 @@ const Index = () => (
           </h2>
         </MotionSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {services.map((s, i) => (
-            <MotionSection key={s.title} delay={i * 0.15}>
+          {services.map((s, i) =>
+        <MotionSection key={s.title} delay={i * 0.15}>
               <ServiceCard icon={s.icon} title={s.title} description={s.description} />
             </MotionSection>
-          ))}
+        )}
         </div>
       </div>
     </section>
 
     <CTASection />
     <Footer />
-  </div>
-);
+  </div>;
+
 
 export default Index;
