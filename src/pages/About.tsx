@@ -72,7 +72,7 @@ TrueReech exists to help brands show up in those moments of discovery.
       <div className="container mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <MotionSection direction="left">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Why Founders Trust Us</h2>
-          <p className="text-muted-foreground mb-6">A Trusted Partner to SaaS Innovators</p>
+          <p className="text-muted-foreground mb-6">A trusted partner for modern digital businesses</p>
           <div className="space-y-6">
             <div className="flex gap-3"><Target className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">SaaS Focused</p><p className="text-sm text-muted-foreground">We specialize in helping SaaS startups rise above the noise in a competitive digital landscape.</p></div></div>
             <div className="flex gap-3"><Search className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Visibility Experts</p><p className="text-sm text-muted-foreground">Our team has years of experience in AI search optimization, community engagement & content marketing.</p></div></div>
