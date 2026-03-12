@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MotionSection from "@/components/MotionSection";
-import heroImg from "@/assets/hero-illustration.png";
+import heroImg from "@/assets/ChatGPT_Image_Mar_12,_2026,_08_09_26_PM.png";
 import iconAi from "@/assets/icon-ai-visibility.png";
 import iconReddit from "@/assets/icon-reddit.png";
 import iconSeo from "@/assets/icon-seo.png";
