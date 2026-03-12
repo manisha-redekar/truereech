@@ -55,27 +55,8 @@ const Index = () => (
       <MotionSection className="container mx-auto max-w-3xl text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Discovery Is Changing. Search Is No Longer Just Google.</h2>
         <p className="text-muted-foreground mb-6">People are now asking AI tools questions like:</p>
-        <div className="flex flex-wrap gap-3 justify-center mb-6">
-          <motion.span
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-            className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium"
-          >
-            ChatGPT — "Best project management SaaS"
-          </motion.span>
-          <motion.span
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.35, duration: 0.4 }}
-            className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium"
-          >
-            Perplexity AI — "Best AI email marketing tools"
-          </motion.span>
-        </div>
-        <p className="font-semibold text-lg">Real users are asking for tools — right now.</p>
+        <RotatingSearchQuery />
+        <p className="font-semibold text-lg mt-6">Real users are asking for tools — right now.</p>
       </MotionSection>
     </section>
 
