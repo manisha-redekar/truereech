@@ -59,7 +59,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Button asChild className="w-full mt-2">
-            <Link to="/about" onClick={() => setOpen(false)}>Get Visibility Audit</Link>
+            <Link to="/about" onClick={() => setOpen(false)}>Connect Now</Link>
           </Button>
         </div>
       )}

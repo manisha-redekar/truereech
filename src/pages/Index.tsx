@@ -36,7 +36,7 @@ const Index = () =>
           </p>
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" asChild>
-              <Link to="/about">Get Visibility Audit</Link>
+              <Link to="/about">Connect Now</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link to="/services">See How It Works</Link>
