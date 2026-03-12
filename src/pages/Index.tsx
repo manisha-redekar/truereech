@@ -30,8 +30,8 @@ const Index = () =>
             Help Your <span className="text-primary">Brand</span> Get Discovered in AI{" "}
             <span className="text-primary">Answers</span>, <span className="text-primary">Reddit Discussions</span>, and Search.
           </h1>
-          <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-            We place your SaaS product where users are <span className="font-semibold text-foreground">actually</span> searching
+          <p className="text-muted-foreground text-lg mb-8 max-w-lg">We place your SaaS product where users are actually searching for solutions in AI-generated answers, real community conversations, and high-authority content.
+          <span className="font-semibold text-foreground">actually</span> searching
             for solutions — in AI-generated answers, real community conversations, and high-authority content.
           </p>
           <div className="flex gap-4 flex-wrap">
