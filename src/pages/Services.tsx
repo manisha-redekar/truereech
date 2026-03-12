@@ -14,22 +14,23 @@ const services = [
   {
     icon: iconAi, title: "AI Visibility",
     description: "Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.",
-    bullets: ["Your SaaS gets recommended by AI answers.", "Appear in 'best tools' answers.", "Increase AI-driven traffic."],
+    bullets: ["Your product gets recommended in AI answers.", "AAppear in “best tools” and comparison searches.", "Increase traffic coming directly from AI tools."],
   },
   {
     icon: iconReddit, title: "Reddit Marketing",
-    description: "Identify relevant subreddits and engage in discussions. Participate authentically, providing actual value.",
-    bullets: ["Encourage natural mentions and recommendations of your SaaS.", "Drive targeted community traffic."],
+    description: "Find the right subreddits where your audience already hangs out and participate in conversations in a natural, helpful way.",
+    bullets: ["Encourage genuine mentions and recommendations of your product.", "Bring targeted traffic from real community discussions."],
   },
   {
     icon: iconSeo, title: "SEO Blogs & Content",
-    description: "Build authority and organic traffic with strategic content designed to rank.",
-    bullets: ["Rank on Google for key industry searches.", "Earn organic traffic that compounds over time."],
+    description: "Create strategic content that builds authority and helps your brand show up in organic search.",
+    bullets: ["Rank on Google for key industry searches.", "Generate organic traffic that grows consistently over time."],
   },
 ];
 
 const plans = [
-  { name: "Starter", price: "$1,500/month", features: ["AI Visibility Audit", "Reddit Community Research", "4 SEO Blog articles"] },
+  { name: "Starter", price: "$1,500/month", features: ["Up to 10 SEO blog articles per month (revisable based on strategy)", "Up to 20 Reddit/community posts (customizable for relevant discussions)", "Keyword and topic research
+", "Content designed for long-term search visibility"] },
   { name: "Growth", price: "$3,000/month", features: ["Advanced AI Visibility Strategy", "Reddit Community Engagement", "8 SEO Blog Articles/mo"] },
   { name: "Custom", price: "For scaling SaaS", features: ["Contact us for a personalised plan for SaaS companies."], custom: true },
 ];
