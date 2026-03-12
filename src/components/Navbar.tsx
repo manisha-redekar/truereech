@@ -21,7 +21,9 @@ const Navbar = () => {
           <span className="text-primary">True</span>
           <span className="text-foreground">Reech</span>
         </Link>
-
+<span className="text-xs text-muted-foreground">
+    Where True Reach Happens
+  </span>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
