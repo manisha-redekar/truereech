@@ -39,7 +39,7 @@ const About = () => (
       <div className="container mx-auto max-w-3xl">
         <MotionSection>
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Our Mission</h2>
-          <h3 className="text-xl font-bold mb-4">Helping SaaS Products Get Discovered in a Shifting Landscape</h3>
+          <h3 className="text-xl font-bold mb-4">Helping Brands Get Discovered in a Shifting Landscape</h3>
           <p className="text-muted-foreground mb-10">
             TrueReech was founded with a simple goal: to change how brands get discovered online by positioning them where real conversations and searches happen today AI answers, Reddit discussions, and organic search.
           </p>
