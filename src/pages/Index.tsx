@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Monitor, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
 import RotatingSearchQuery from "@/components/RotatingSearchQuery";
 import { Button } from "@/components/ui/button";
@@ -30,9 +31,8 @@ const Index = () =>
             Help Your <span className="text-primary">Brand</span> Get Discovered in AI{" "}
             <span className="text-primary">Answers</span>, <span className="text-primary">Reddit Discussions</span>, and Search.
           </h1>
-          <p className="text-muted-foreground text-lg mb-8 max-w-lg">TrueReech helps SaaS products and D2C brands appear in AI answers, community discussions, and organic search where customers actively look for solutions.
-          <span className="font-semibold text-foreground">actually</span> searching
-            for solutions — in AI-generated answers, real community conversations, and high-authority content.
+          <p className="text-muted-foreground text-lg mb-8 max-w-lg">
+            TrueReech helps SaaS companies and D2C brands get discovered in AI answers, Reddit discussions, and search.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" asChild>
@@ -75,6 +75,37 @@ const Index = () =>
               <ServiceCard icon={s.icon} title={s.title} description={s.description} />
             </MotionSection>
         )}
+        </div>
+      </div>
+    </section>
+
+    {/* Who We Work With */}
+    <section className="py-16 px-4">
+      <div className="container mx-auto">
+        <MotionSection>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+            Who We <span className="text-primary">Work With</span>
+          </h2>
+        </MotionSection>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <MotionSection delay={0}>
+            <div className="gradient-card rounded-xl p-6 shadow-card hover:shadow-elevated transition-shadow text-center h-full">
+              <Monitor className="w-12 h-12 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-bold mb-2">SaaS & Tech Products</h3>
+              <p className="text-sm text-muted-foreground">
+                Helping SaaS companies and tech products appear in AI answers, developer communities, comparison searches, and product discovery queries.
+              </p>
+            </div>
+          </MotionSection>
+          <MotionSection delay={0.15}>
+            <div className="gradient-card rounded-xl p-6 shadow-card hover:shadow-elevated transition-shadow text-center h-full">
+              <ShoppingBag className="w-12 h-12 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-bold mb-2">D2C & Ecommerce Brands</h3>
+              <p className="text-sm text-muted-foreground">
+                Helping consumer brands appear in Reddit discussions, AI recommendations, buyer research searches, and community conversations where customers discover products.
+              </p>
+            </div>
+          </MotionSection>
         </div>
       </div>
     </section>
