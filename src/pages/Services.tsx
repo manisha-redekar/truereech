@@ -87,6 +87,8 @@ const Services = () => (
           <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Optimize content so AI tools like ChatGPT and Perplexity can reference and learn from it.</li>
           <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Strategic Reddit engagement to position your product in real community discussions.</li>
           <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> SEO-driven blog and website content designed for long-term discovery.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Earn mentions of your brand on trusted websites and communities.</li>
+          <li className="flex items-start gap-2"><Check className="text-primary mt-0.5 shrink-0" size={18} /> Track visibility improvements across AI answers, search, and community discussions.</li>
         </ul>
       </MotionSection>
     </section>
