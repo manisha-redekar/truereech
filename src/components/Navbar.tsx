@@ -14,6 +14,7 @@ const navLinks = [
 const Navbar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const { open: openContact } = useContactModal();
 
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
