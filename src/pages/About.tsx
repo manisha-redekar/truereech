@@ -81,16 +81,7 @@ TrueReech exists to help brands show up in those moments of discovery.
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
           <img src={teamPhoto} alt="Team" className="rounded-xl shadow-elevated w-full mb-6" />
-          <div className="grid grid-cols-2 gap-4">
-            <div className="gradient-card rounded-lg p-4 shadow-card text-center">
-              <p className="font-bold">Jake Thompson</p>
-              <p className="text-xs text-muted-foreground">Co-Founder & CEO</p>
-            </div>
-            <div className="gradient-card rounded-lg p-4 shadow-card text-center">
-              <p className="font-bold">Emily Park</p>
-              <p className="text-xs text-muted-foreground">Co-Founder & COO</p>
-            </div>
-          </div>
+          
         </MotionSection>
       </div>
     </section>
