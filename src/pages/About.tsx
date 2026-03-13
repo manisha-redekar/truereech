@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MotionSection from "@/components/MotionSection";
+import { TestimonialSlider } from "@/components/TestimonialSlider";
 import heroImg from "@/assets/ChatGPT_Image_Mar_12,_2026,_08_09_26_PM.png";
 import iconAi from "@/assets/icon-ai-visibility.png";
 import iconReddit from "@/assets/icon-reddit.png";
@@ -69,19 +70,18 @@ TrueReech exists to help brands show up in those moments of discovery.
 
     {/* Why Trust Us */}
     <section className="py-16 px-4 bg-accent/30">
-      <div className="container mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <MotionSection direction="left">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Why Founders Trust Us</h2>
           <p className="text-muted-foreground mb-6">A trusted partner for modern digital businesses</p>
           <div className="space-y-6">
             <div className="flex gap-3"><Target className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Brand & Product Focused</p><p className="text-sm text-muted-foreground">We specialize in helping SaaS products and D2C brands stand out in a crowded digital landscape by positioning them where real discovery happens.</p></div></div>
             <div className="flex gap-3"><Search className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Visibility Experts</p><p className="text-sm text-muted-foreground">Our team has years of experience in AI search optimization, community engagement & content marketing.</p></div></div>
-            <div className="flex gap-3"><BarChart3 className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Transparent Results</p><p className="text-sm text-muted-foreground">We provide clear reporting on visibility improvements, search presence, and measurable growth so you always know what’s working.</p></div></div>
+            <div className="flex gap-3"><BarChart3 className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Transparent Results</p><p className="text-sm text-muted-foreground">We provide clear reporting on visibility improvements, search presence, and measurable growth so you always know what's working.</p></div></div>
           </div>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
-          
-          
+          <TestimonialSlider />
         </MotionSection>
       </div>
     </section>
