@@ -157,7 +157,7 @@ const Services = () => (
             </MotionSection>
           ))}
           <MotionSection delay={0.3}>
-            <div className="bg-accent/20 rounded-xl p-6 h-full flex flex-col justify-center">
+            <div className="bg-accent/10 rounded-xl p-6 h-full flex flex-col justify-center">
               <h3 className="text-lg font-bold mb-4">Why Our Pricing Works</h3>
               <div className="space-y-3">
                 <p className="text-muted-foreground">We focus on helping brands build lasting visibility and trust.</p>
