@@ -175,6 +175,7 @@ const Services = () => {
     <CTASection />
     <Footer />
   </div>
-);
+  );
+};
 
 export default Services;

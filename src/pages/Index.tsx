@@ -37,9 +37,7 @@ return <div className="min-h-screen flex flex-col">
             TrueReech helps SaaS companies and D2C brands get discovered in AI answers, Reddit discussions, and search.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <Button size="lg" asChild>
-              <Link to="/about">Connect Now</Link>
-            </Button>
+            <Button size="lg" onClick={openContact}>Connect Now</Button>
             <Button size="lg" variant="outline" asChild>
               <Link to="/services">See How It Works</Link>
             </Button>
