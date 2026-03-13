@@ -44,9 +44,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild>
-            <Link to="/about">Connect Now</Link>
-          </Button>
+          <Button onClick={openContact}>Connect Now</Button>
         </div>
 
         <button className="md:hidden" onClick={() => setOpen(!open)}>
