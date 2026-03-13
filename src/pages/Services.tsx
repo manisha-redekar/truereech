@@ -29,8 +29,7 @@ const services = [
 ];
 
 const plans = [
-  { name: "Starter", price: "$1,500/month", features: ["Up to 10 SEO blog articles per month (revisable based on strategy)", "Up to 20 Reddit/community posts (customizable for relevant discussions)", "Keyword and topic research
-"] },
+  { name: "Starter", price: "$1,500/month", features: ["Up to 10 SEO blog articles per month (revisable based on strategy)", "Up to 20 Reddit/community posts (customizable for relevant discussions)"] },
   { name: "Growth", price: "$3,000/month", features: ["Advanced AI Visibility Strategy", "Reddit Community Engagement", "8 SEO Blog Articles/mo"] },
   { name: "Custom", price: "For scaling SaaS", features: ["Contact us for a personalised plan for SaaS companies."], custom: true },
 ];
