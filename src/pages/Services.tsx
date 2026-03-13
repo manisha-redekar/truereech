@@ -51,21 +51,7 @@ const plans = [
     ]
   }
 ];
-<div className="bg-white rounded-xl p-6 shadow-md">
-  <h3 className="text-xl font-semibold mb-4">
-    Why Our Pricing Works
-  </h3>
 
-  <p className="text-muted-foreground mb-4">
-    We focus on long-term visibility rather than short-term marketing tricks.
-  </p>
-
-  <ul className="space-y-3">
-    <li>✓ AI visibility strategy and optimization</li>
-    <li>✓ Community discovery through Reddit</li>
-    <li>✓ SEO content that compounds over time</li>
-  </ul>
-</div>
 const Services = () => (
   <div className="min-h-screen flex flex-col">
     <Navbar />
