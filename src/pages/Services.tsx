@@ -14,7 +14,7 @@ const services = [
   {
     icon: iconAi, title: "AI Visibility",
     description: "Get seen in AI-generated answers by creating content and signals trusted by AI models like ChatGPT, Gemini, and Perplexity.",
-    bullets: ["Your product gets recommended in AI answers.", "AAppear in “best tools” and comparison searches.", "Increase traffic coming directly from AI tools."],
+    bullets: ["Your product gets recommended in AI answers.", "Appear in “best tools” and comparison searches.", "Increase traffic coming directly from AI tools."],
   },
   {
     icon: iconReddit, title: "Reddit Marketing",
@@ -40,7 +40,7 @@ const plans = [
     ]
   },
   {
-    name: "Visibility Growth",
+    name: "Growth",
     price: "$1000/month",
     features: [
       "AI visibility strategy and optimization",
