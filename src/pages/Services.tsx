@@ -58,7 +58,7 @@ const Services = () => (
 
     {/* Hero */}
     <section className="gradient-hero py-16 md:py-24 px-4">
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <MotionSection>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Our <span className="text-primary">Services</span>
