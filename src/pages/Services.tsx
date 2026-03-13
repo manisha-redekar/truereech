@@ -53,7 +53,9 @@ const plans = [
   }
 ];
 
-const Services = () => (
+const Services = () => {
+  const { open: openContact } = useContactModal();
+  return (
   <div className="min-h-screen flex flex-col">
     <Navbar />
 
