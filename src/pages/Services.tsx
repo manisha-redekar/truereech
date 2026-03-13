@@ -134,32 +134,38 @@ const Services = () => (
 
     {/* Pricing */}
     <section className="py-16 px-4">
-      <MotionSection className="container mx-auto text-center">
+      <MotionSection className="container mx-auto text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Pricing Plans</h2>
-        <p className="text-muted-foreground mb-6">Simple, transparent pricing based on your SaaS growth stage.</p>
-        <div className="bg-accent/20 rounded-lg p-6 mb-12 max-w-2xl mx-auto text-left">
-          <h3 className="text-lg font-bold mb-3">Why Our Pricing Works</h3>
-          <p className="text-muted-foreground mb-2">We focus on long-term visibility rather than short-term marketing tricks.</p>
-          <p className="text-muted-foreground">Every plan is designed to help your brand build trust, authority, and consistent discovery over time.</p>
-        </div>
+        <p className="text-muted-foreground">Simple, transparent pricing based on your SaaS growth stage.</p>
       </MotionSection>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
-        {plans.map((p, i) => (
-          <MotionSection key={p.name} delay={i * 0.15}>
-            <div className="gradient-card rounded-xl p-6 shadow-card text-left h-full flex flex-col">
-              <h3 className="text-xl font-bold">{p.name}</h3>
-              <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
-              <ul className="space-y-2 text-sm mb-6 flex-1">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
-                ))}
-              </ul>
-              <Button variant={p.custom ? "outline" : "default"} className="w-full">
-                {p.custom ? "Contact Us" : "Get Started"}
-              </Button>
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {plans.map((p, i) => (
+            <MotionSection key={p.name} delay={i * 0.15}>
+              <div className="gradient-card rounded-xl p-6 shadow-card text-left h-full flex flex-col">
+                <h3 className="text-xl font-bold">{p.name}</h3>
+                <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
+                <ul className="space-y-2 text-sm mb-6 flex-1">
+                  {p.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
+                  ))}
+                </ul>
+                <Button variant={p.custom ? "outline" : "default"} className="w-full">
+                  {p.custom ? "Contact Us" : "Get Started"}
+                </Button>
+              </div>
+            </MotionSection>
+          ))}
+          <MotionSection delay={0.3}>
+            <div className="bg-accent/20 rounded-xl p-6 h-full flex flex-col justify-center">
+              <h3 className="text-lg font-bold mb-4">Why Our Pricing Works</h3>
+              <div className="space-y-3">
+                <p className="text-muted-foreground">We focus on long-term visibility rather than short-term marketing tricks.</p>
+                <p className="text-muted-foreground">Every plan is designed to help your brand build trust, authority, and consistent discovery over time.</p>
+              </div>
             </div>
           </MotionSection>
-        ))}
+        </div>
       </div>
     </section>
 
