@@ -80,7 +80,7 @@ TrueReech exists to help brands show up in those moments of discovery.
           </div>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
-          <img src={teamPhoto} alt="Team" className="rounded-xl shadow-elevated w-full mb-6" />
+          
           
         </MotionSection>
       </div>
