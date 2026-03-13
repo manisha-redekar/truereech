@@ -44,7 +44,7 @@ const plans = [
     name: "Growth",
     price: "$1000/month",
     features: [
-      <b>"AI visibility strategy and optimization"</b>,
+      <b key="ai-bold">AI visibility strategy and optimization</b>,
       "Content structured to appear in AI answers and recommendation queries",
       "Relevant SEO blog content for authority and discovery",
       "Up to 30 community / Reddit posts in targeted discussions",
