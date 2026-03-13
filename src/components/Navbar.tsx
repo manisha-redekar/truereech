@@ -64,9 +64,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="w-full mt-2">
-            <Link to="/about" onClick={() => setOpen(false)}>Connect Now</Link>
-          </Button>
+          <Button className="w-full mt-2" onClick={() => { setOpen(false); openContact(); }}>Connect Now</Button>
         </div>
       )}
     </nav>

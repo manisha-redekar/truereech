@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Monitor, ShoppingBag } from "lucide-react";
+import { useContactModal } from "@/hooks/useContactModal";
 import { motion } from "framer-motion";
 import RotatingSearchQuery from "@/components/RotatingSearchQuery";
 import { Button } from "@/components/ui/button";
