@@ -160,8 +160,8 @@ const Services = () => (
             <div className="bg-accent/20 rounded-xl p-6 h-full flex flex-col justify-center">
               <h3 className="text-lg font-bold mb-4">Why Our Pricing Works</h3>
               <div className="space-y-3">
-                <p className="text-muted-foreground">We focus on long-term visibility rather than short-term marketing tricks.</p>
-                <p className="text-muted-foreground">Every plan is designed to help your brand build trust, authority, and consistent discovery over time.</p>
+                <p className="text-muted-foreground">We focus on helping brands build lasting visibility and trust.</p>
+               
               </div>
             </div>
           </MotionSection>
