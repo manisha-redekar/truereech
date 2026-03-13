@@ -136,7 +136,12 @@ const Services = () => (
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Pricing Plans</h2>
-        <p className="text-muted-foreground mb-12">Simple, transparent pricing based on your SaaS growth stage.</p>
+        <p className="text-muted-foreground mb-6">Simple, transparent pricing based on your SaaS growth stage.</p>
+        <div className="bg-accent/20 rounded-lg p-6 mb-12 max-w-2xl mx-auto text-left">
+          <h3 className="text-lg font-bold mb-3">Why Our Pricing Works</h3>
+          <p className="text-muted-foreground mb-2">We focus on long-term visibility rather than short-term marketing tricks.</p>
+          <p className="text-muted-foreground">Every plan is designed to help your brand build trust, authority, and consistent discovery over time.</p>
+        </div>
       </MotionSection>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
         {plans.map((p, i) => (
