@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Monitor, ShoppingBag } from "lucide-react";
+import { useContactModal } from "@/hooks/useContactModal";
 import { motion } from "framer-motion";
 import RotatingSearchQuery from "@/components/RotatingSearchQuery";
 import { Button } from "@/components/ui/button";
@@ -19,8 +20,9 @@ const services = [
 { icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content." }];
 
 
-const Index = () =>
-<div className="min-h-screen flex flex-col">
+const Index = () => {
+const { open: openContact } = useContactModal();
+return <div className="min-h-screen flex flex-col">
     <Navbar />
 
     {/* Hero */}
@@ -35,9 +37,7 @@ const Index = () =>
             TrueReech helps SaaS companies and D2C brands get discovered in AI answers, Reddit discussions, and search.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <Button size="lg" asChild>
-              <Link to="/about">Connect Now</Link>
-            </Button>
+            <Button size="lg" onClick={openContact}>Connect Now</Button>
             <Button size="lg" variant="outline" asChild>
               <Link to="/services">See How It Works</Link>
             </Button>
@@ -113,6 +113,7 @@ const Index = () =>
     <CTASection />
     <Footer />
   </div>;
+};
 
 
 export default Index;

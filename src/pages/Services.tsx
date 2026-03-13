@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
+import { useContactModal } from "@/hooks/useContactModal";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -43,7 +44,7 @@ const plans = [
     name: "Growth",
     price: "$1000/month",
     features: [
-      <b>"AI visibility strategy and optimization"</b>,
+      <b key="ai-bold">AI visibility strategy and optimization</b>,
       "Content structured to appear in AI answers and recommendation queries",
       "Relevant SEO blog content for authority and discovery",
       "Up to 30 community / Reddit posts in targeted discussions",
@@ -52,7 +53,9 @@ const plans = [
   }
 ];
 
-const Services = () => (
+const Services = () => {
+  const { open: openContact } = useContactModal();
+  return (
   <div className="min-h-screen flex flex-col">
     <Navbar />
 
@@ -70,7 +73,7 @@ const Services = () => (
             AI answers, community discussions, and high-authority content.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <Button size="lg" asChild><Link to="/about">Connect Now</Link></Button>
+            <Button size="lg" onClick={openContact}>Connect Now</Button>
             <Button size="lg" variant="outline">Get Started</Button>
           </div>
         </MotionSection>
@@ -146,12 +149,12 @@ const Services = () => (
                 <h3 className="text-xl font-bold">{p.name}</h3>
                 <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
                 <ul className="space-y-2 text-sm mb-6 flex-1">
-                  {p.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
+                  {p.features.map((f, idx) => (
+                    <li key={idx} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
                   ))}
                 </ul>
-                <Button variant={p.custom ? "outline" : "default"} className="w-full">
-                  {p.custom ? "Contact Us" : "Get Started"}
+                <Button variant="default" className="w-full" onClick={openContact}>
+                  Get Started
                 </Button>
               </div>
             </MotionSection>
@@ -172,6 +175,7 @@ const Services = () => (
     <CTASection />
     <Footer />
   </div>
-);
+  );
+};
 
 export default Services;

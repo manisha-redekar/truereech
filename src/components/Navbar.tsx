@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -13,6 +14,7 @@ const navLinks = [
 const Navbar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const { open: openContact } = useContactModal();
 
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -42,9 +44,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild>
-            <Link to="/about">Connect Now</Link>
-          </Button>
+          <Button onClick={openContact}>Connect Now</Button>
         </div>
 
         <button className="md:hidden" onClick={() => setOpen(!open)}>
@@ -64,9 +64,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="w-full mt-2">
-            <Link to="/about" onClick={() => setOpen(false)}>Connect Now</Link>
-          </Button>
+          <Button className="w-full mt-2" onClick={() => { setOpen(false); openContact(); }}>Connect Now</Button>
         </div>
       )}
     </nav>
