@@ -20,8 +20,9 @@ const services = [
 { icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content." }];
 
 
-const Index = () =>
-<div className="min-h-screen flex flex-col">
+const Index = () => {
+const { open: openContact } = useContactModal();
+return <div className="min-h-screen flex flex-col">
     <Navbar />
 
     {/* Hero */}
