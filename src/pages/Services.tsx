@@ -149,7 +149,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">{p.name}</h3>
                 <p className="text-lg font-semibold text-primary mb-4">{p.price}</p>
                 <ul className="space-y-2 text-sm mb-6 flex-1">
-                  {p.features.map((f) => (
+                  {p.features.map((f, idx) => (
                     <li key={idx} className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />{f}</li>
                   ))}
                 </ul>
