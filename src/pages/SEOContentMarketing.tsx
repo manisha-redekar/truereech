@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import MotionSection from "@/components/MotionSection";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const queries = [
   "Best SEO content strategy for SaaS",
