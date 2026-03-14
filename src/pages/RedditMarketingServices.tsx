@@ -57,9 +57,10 @@ const RedditMarketingServices = () => {
       </MotionSection>
     </section>
 
-    <CTASection />
-    <Footer />
-  </div>
-);
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
 
 export default RedditMarketingServices;

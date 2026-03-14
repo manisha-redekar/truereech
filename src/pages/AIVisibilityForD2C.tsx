@@ -58,9 +58,10 @@ const AIVisibilityForD2C = () => {
       </MotionSection>
     </section>
 
-    <CTASection />
-    <Footer />
-  </div>
-);
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
 
 export default AIVisibilityForD2C;
