@@ -74,7 +74,7 @@ const Services = () => {
           </p>
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" onClick={openContact}>Connect Now</Button>
-            <Button size="lg" variant="outline">Get Started</Button>
+            <Button size="lg"  onClick={openContact} variant="outline">Get Started</Button>
           </div>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
