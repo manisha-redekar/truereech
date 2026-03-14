@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import MotionSection from "@/components/MotionSection";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const CTASection = () => {
-  const [email, setEmail] = useState("");
+  const { open: openContact } = useContactModal();
 
   return (
     <section className="py-20 px-4 text-center">
@@ -15,14 +16,8 @@ const CTASection = () => {
         <p className="text-muted-foreground mb-8">
           Get a free audit to find out where your brand stands in AI answers and community discussions.
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-          <Input
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="bg-card" />
-          
-          <Button>Request Audit</Button>
+        <div className="flex justify-center">
+          <Button onClick={openContact} size="lg">Connect Now</Button>
         </div>
       </MotionSection>
     </section>);

@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import MotionSection from "@/components/MotionSection";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const queries = [
   "Best Reddit marketing tools for brands",
@@ -12,20 +12,23 @@ const queries = [
   "Reddit marketing strategy for ecommerce",
 ];
 
-const RedditMarketingServices = () => (
-  <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <section className="gradient-hero py-16 md:py-24 px-4">
-      <MotionSection className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-          Reddit <span className="text-primary">Marketing</span> Services
-        </h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          Reddit marketing for brands done right. We help you engage authentically in communities where your customers are already discussing solutions — driving targeted traffic and genuine recommendations.
-        </p>
-        <Button size="lg" asChild><Link to="/about">Request a Visibility Audit</Link></Button>
-      </MotionSection>
-    </section>
+const RedditMarketingServices = () => {
+  const { open: openContact } = useContactModal();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <section className="gradient-hero py-16 md:py-24 px-4">
+        <MotionSection className="container mx-auto max-w-3xl text-center">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            Reddit <span className="text-primary">Marketing</span> Services
+          </h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            Reddit marketing for brands done right. We help you engage authentically in communities where your customers are already discussing solutions — driving targeted traffic and genuine recommendations.
+          </p>
+          <Button size="lg" onClick={openContact}>Connect Now</Button>
+        </MotionSection>
+      </section>
 
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto max-w-3xl">
@@ -54,9 +57,10 @@ const RedditMarketingServices = () => (
       </MotionSection>
     </section>
 
-    <CTASection />
-    <Footer />
-  </div>
-);
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
 
 export default RedditMarketingServices;
