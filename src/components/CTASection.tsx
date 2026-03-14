@@ -17,7 +17,8 @@ const CTASection = () => {
           Get a free audit to find out where your brand stands in AI answers and community discussions.
         </p>
         <div className="flex justify-center">
-          <Button onClick={openContact} size="lg">Connect Now</Button>
+          <Button size="lg"  onClick={openContact} variant="outline">Get Audit
+          </Button>
         </div>
       </MotionSection>
     </section>);
