@@ -13,20 +13,23 @@ const queries = [
   "Alternative to [competitor] for teams",
 ];
 
-const AIVisibilityForSaaS = () => (
-  <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <section className="gradient-hero py-16 md:py-24 px-4">
-      <MotionSection className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-          AI Visibility for <span className="text-primary">SaaS</span> Companies
-        </h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          As a SaaS marketing agency, we specialize in getting your software product recommended by AI tools. When developers, founders, and teams ask ChatGPT or Perplexity for the best tools — your product needs to be the answer.
-        </p>
-        <Button size="lg" asChild><Link to="/about">Request a Visibility Audit</Link></Button>
-      </MotionSection>
-    </section>
+const AIVisibilityForSaaS = () => {
+  const { open: openContact } = useContactModal();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <section className="gradient-hero py-16 md:py-24 px-4">
+        <MotionSection className="container mx-auto max-w-3xl text-center">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            AI Visibility for <span className="text-primary">SaaS</span> Companies
+          </h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            As a SaaS marketing agency, we specialize in getting your software product recommended by AI tools. When developers, founders, and teams ask ChatGPT or Perplexity for the best tools — your product needs to be the answer.
+          </p>
+          <Button size="lg" onClick={openContact}>Connect Now</Button>
+        </MotionSection>
+      </section>
 
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto max-w-3xl">
