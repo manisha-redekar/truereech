@@ -13,20 +13,23 @@ const queries = [
   "Affordable eco-friendly clothing brands",
 ];
 
-const AIVisibilityForD2C = () => (
-  <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <section className="gradient-hero py-16 md:py-24 px-4">
-      <MotionSection className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-          AI Visibility for <span className="text-primary">D2C Brands</span>
-        </h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          As a D2C marketing agency, we help consumer brands get recommended in AI answers, Reddit discussions, and buyer research queries. When shoppers ask AI tools for the best products — your brand should be the recommendation.
-        </p>
-        <Button size="lg" asChild><Link to="/about">Request a Visibility Audit</Link></Button>
-      </MotionSection>
-    </section>
+const AIVisibilityForD2C = () => {
+  const { open: openContact } = useContactModal();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <section className="gradient-hero py-16 md:py-24 px-4">
+        <MotionSection className="container mx-auto max-w-3xl text-center">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            AI Visibility for <span className="text-primary">D2C Brands</span>
+          </h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            As a D2C marketing agency, we help consumer brands get recommended in AI answers, Reddit discussions, and buyer research queries. When shoppers ask AI tools for the best products — your brand should be the recommendation.
+          </p>
+          <Button size="lg" onClick={openContact}>Connect Now</Button>
+        </MotionSection>
+      </section>
 
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto max-w-3xl">
