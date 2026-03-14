@@ -58,9 +58,10 @@ const AIVisibilityForSaaS = () => {
       </MotionSection>
     </section>
 
-    <CTASection />
-    <Footer />
-  </div>
-);
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
 
 export default AIVisibilityForSaaS;
