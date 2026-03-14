@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import MotionSection from "@/components/MotionSection";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const CTASection = () => {
   const [email, setEmail] = useState("");
