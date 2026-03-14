@@ -11,7 +11,7 @@ interface ContactFormModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const FORMSPREE_URL = "https://formspree.io/f/xwpkvogn";
+const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
 
 const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
   const [name, setName] = useState("");
@@ -75,7 +75,7 @@ const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
         {success ? (
           <div className="py-8 text-center">
             <p className="text-lg font-semibold text-primary mb-2">Thanks!</p>
-            <p className="text-muted-foreground">Your message has been sent. We will get back to you soon.</p>
+            <p className="text-muted-foreground">We usually reply within 24 hours.</p>
             <Button className="mt-6" onClick={() => handleClose(false)}>Close</Button>
           </div>
         ) : (
