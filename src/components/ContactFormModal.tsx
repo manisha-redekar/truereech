@@ -11,7 +11,7 @@ interface ContactFormModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const FORMSPREE_URL = "https://formspree.io/f/xwpkvogn";
+const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
 
 const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
   const [name, setName] = useState("");
