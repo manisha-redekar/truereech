@@ -11,8 +11,6 @@ interface ContactFormModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
-
 const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -36,15 +34,26 @@ const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
     if (!validate()) return;
     setSubmitting(true);
     try {
-      const res = await fetch(FORMSPREE_URL, {
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+      const res = await fetch(`${supabaseUrl}/functions/v1/send-contact-email`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: name.trim(), email: email.trim(), message: message.trim() }),
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${supabaseAnonKey}`,
+        },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          message: message.trim(),
+        }),
       });
+
       if (res.ok) {
         setSuccess(true);
       } else {
-        throw new Error("Failed");
+        throw new Error("Failed to send email");
       }
     } catch {
       setErrors({ message: "Something went wrong. Please try again." });
@@ -74,8 +83,8 @@ const ContactFormModal = ({ open, onOpenChange }: ContactFormModalProps) => {
 
         {success ? (
           <div className="py-8 text-center">
-            <p className="text-lg font-semibold text-primary mb-2">Thanks!</p>
-            <p className="text-muted-foreground">We usually reply within 24 hours.</p>
+            <p className="text-lg font-semibold text-primary mb-2">Thanks! Your message has been sent.</p>
+            <p className="text-muted-foreground">We will get back to you soon.</p>
             <Button className="mt-6" onClick={() => handleClose(false)}>Close</Button>
           </div>
         ) : (
