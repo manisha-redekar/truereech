@@ -12,20 +12,23 @@ const queries = [
   "Best CRM software for small business",
 ];
 
-const AIVisibilityServices = () => (
-  <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <section className="gradient-hero py-16 md:py-24 px-4">
-      <MotionSection className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-          AI Visibility <span className="text-primary">Services</span>
-        </h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          Get your brand recommended in AI-generated answers from ChatGPT, Gemini, and Perplexity. Our AI visibility services ensure your product appears when users ask AI tools for recommendations.
-        </p>
-        <Button size="lg" asChild><Link to="/about">Request a Visibility Audit</Link></Button>
-      </MotionSection>
-    </section>
+const AIVisibilityServices = () => {
+  const { open: openContact } = useContactModal();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <section className="gradient-hero py-16 md:py-24 px-4">
+        <MotionSection className="container mx-auto max-w-3xl text-center">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            AI Visibility <span className="text-primary">Services</span>
+          </h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            Get your brand recommended in AI-generated answers from ChatGPT, Gemini, and Perplexity. Our AI visibility services ensure your product appears when users ask AI tools for recommendations.
+          </p>
+          <Button size="lg" onClick={openContact}>Connect Now</Button>
+        </MotionSection>
+      </section>
 
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto max-w-3xl">
