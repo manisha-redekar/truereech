@@ -12,20 +12,23 @@ const queries = [
   "How to rank SaaS blog posts on Google",
 ];
 
-const SEOContentMarketing = () => (
-  <div className="min-h-screen flex flex-col">
-    <Navbar />
-    <section className="gradient-hero py-16 md:py-24 px-4">
-      <MotionSection className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-          SEO Content <span className="text-primary">Marketing</span>
-        </h1>
-        <p className="text-muted-foreground text-lg mb-8">
-          Build authority and organic traffic with strategic SEO content for SaaS and ecommerce. Our search-optimized content ranks on Google and earns the trust of AI models.
-        </p>
-        <Button size="lg" asChild><Link to="/about">Request a Visibility Audit</Link></Button>
-      </MotionSection>
-    </section>
+const SEOContentMarketing = () => {
+  const { open: openContact } = useContactModal();
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <section className="gradient-hero py-16 md:py-24 px-4">
+        <MotionSection className="container mx-auto max-w-3xl text-center">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            SEO Content <span className="text-primary">Marketing</span>
+          </h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            Build authority and organic traffic with strategic SEO content for SaaS and ecommerce. Our search-optimized content ranks on Google and earns the trust of AI models.
+          </p>
+          <Button size="lg" onClick={openContact}>Connect Now</Button>
+        </MotionSection>
+      </section>
 
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto max-w-3xl">
