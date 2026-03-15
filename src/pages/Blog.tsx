@@ -13,6 +13,7 @@ import heroImg from "@/assets/hero-illustration.png";
 const categories = ["All", "AI Visibility", "Reddit Marketing", "SEO & Content"];
 
 const articles = [
+  { tags: ["AI Visibility"], title: "How to Appear in AI Search Results (ChatGPT, Google AI & Perplexity)", excerpt: "Learn how startups appear in AI answers across ChatGPT, Google AI Overviews, and Perplexity using AI visibility optimization, community signals, and structured content.", date: "March 2025", slug: "/blogs/how-to-appear-in-ai-search-results" },
   { tags: ["SEO & Content"], title: "Marketing Strategy for Bootstrapped SaaS Startups (Without Burning Money on Ads)", excerpt: "A practical marketing strategy for bootstrapped SaaS startups focusing on community marketing, Reddit discovery, and long-term SEO visibility.", date: "March 2025", slug: "/blogs/marketing-strategy-bootstrapped-saas" },
   { tags: ["AI Visibility"], title: "What is AI Visibility? How to Get Your SaaS Noticed by AI Tools", excerpt: "How to ensure your SaaS product appears in AI-generated answers to boost visibility and drive traffic.", date: "April 2024", slug: "" },
   { tags: ["AI Visibility", "Reddit Marketing"], title: "5 Ways Reddit Can Drive New Users to Your SaaS in 2024", excerpt: "Discover how to leverage the Reddit community to attract real, engaged users to your SaaS product.", date: "April 18, 2024", slug: "" },
