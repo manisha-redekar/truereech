@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,10 +13,11 @@ import heroImg from "@/assets/hero-illustration.png";
 const categories = ["All", "AI Visibility", "Reddit Marketing", "SEO & Content"];
 
 const articles = [
-  { tags: ["AI Visibility"], title: "What is AI Visibility? How to Get Your SaaS Noticed by AI Tools", excerpt: "How to ensure your SaaS product appears in AI-generated answers to boost visibility and drive traffic.", date: "April 2024" },
-  { tags: ["AI Visibility", "Reddit Marketing"], title: "5 Ways Reddit Can Drive New Users to Your SaaS in 2024", excerpt: "Discover how to leverage the Reddit community to attract real, engaged users to your SaaS product.", date: "April 18, 2024" },
-  { tags: ["SEO & Content"], title: "Content Marketing Trends for SaaS Startups in 2024", excerpt: "Learn about the latest content marketing trends that can help SaaS startups gain visibility, authority, and organic traffic.", date: "April 18, 2024" },
-  { tags: ["SEO & Content"], title: "How to Run a Reddit AMA to Gain Exposure for Your SaaS", excerpt: "Get a free visibility audit to see where your product stands in AI answers and community.", date: "April 15, 2024" },
+  { tags: ["SEO & Content"], title: "Marketing Strategy for Bootstrapped SaaS Startups (Without Burning Money on Ads)", excerpt: "A practical marketing strategy for bootstrapped SaaS startups focusing on community marketing, Reddit discovery, and long-term SEO visibility.", date: "March 2025", slug: "/blogs/marketing-strategy-bootstrapped-saas" },
+  { tags: ["AI Visibility"], title: "What is AI Visibility? How to Get Your SaaS Noticed by AI Tools", excerpt: "How to ensure your SaaS product appears in AI-generated answers to boost visibility and drive traffic.", date: "April 2024", slug: "" },
+  { tags: ["AI Visibility", "Reddit Marketing"], title: "5 Ways Reddit Can Drive New Users to Your SaaS in 2024", excerpt: "Discover how to leverage the Reddit community to attract real, engaged users to your SaaS product.", date: "April 18, 2024", slug: "" },
+  { tags: ["SEO & Content"], title: "Content Marketing Trends for SaaS Startups in 2024", excerpt: "Learn about the latest content marketing trends that can help SaaS startups gain visibility, authority, and organic traffic.", date: "April 18, 2024", slug: "" },
+  { tags: ["SEO & Content"], title: "How to Run a Reddit AMA to Gain Exposure for Your SaaS", excerpt: "Get a free visibility audit to see where your product stands in AI answers and community.", date: "April 15, 2024", slug: "" },
 ];
 
 const Blog = () => {
@@ -88,14 +90,29 @@ const Blog = () => {
                   transition={{ duration: 0.35, delay: i * 0.08 }}
                   className="gradient-card rounded-xl p-6 shadow-card"
                 >
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    {a.tags.map((t) => (
-                      <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
-                    ))}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{a.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
-                  <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                  {a.slug ? (
+                    <Link to={a.slug} className="block group">
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {a.tags.map((t) => (
+                          <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{a.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
+                      <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                    </Link>
+                  ) : (
+                    <>
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {a.tags.map((t) => (
+                          <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-lg font-bold mb-2">{a.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
+                      <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                    </>
+                  )}
                 </motion.article>
               ))}
             </div>
