@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,10 +13,11 @@ import heroImg from "@/assets/hero-illustration.png";
 const categories = ["All", "AI Visibility", "Reddit Marketing", "SEO & Content"];
 
 const articles = [
-  { tags: ["AI Visibility"], title: "What is AI Visibility? How to Get Your SaaS Noticed by AI Tools", excerpt: "How to ensure your SaaS product appears in AI-generated answers to boost visibility and drive traffic.", date: "April 2024" },
-  { tags: ["AI Visibility", "Reddit Marketing"], title: "5 Ways Reddit Can Drive New Users to Your SaaS in 2024", excerpt: "Discover how to leverage the Reddit community to attract real, engaged users to your SaaS product.", date: "April 18, 2024" },
-  { tags: ["SEO & Content"], title: "Content Marketing Trends for SaaS Startups in 2024", excerpt: "Learn about the latest content marketing trends that can help SaaS startups gain visibility, authority, and organic traffic.", date: "April 18, 2024" },
-  { tags: ["SEO & Content"], title: "How to Run a Reddit AMA to Gain Exposure for Your SaaS", excerpt: "Get a free visibility audit to see where your product stands in AI answers and community.", date: "April 15, 2024" },
+  { tags: ["SEO & Content"], title: "Marketing Strategy for Bootstrapped SaaS Startups (Without Burning Money on Ads)", excerpt: "A practical marketing strategy for bootstrapped SaaS startups focusing on community marketing, Reddit discovery, and long-term SEO visibility.", date: "March 2025", slug: "/blogs/marketing-strategy-bootstrapped-saas" },
+  { tags: ["AI Visibility"], title: "What is AI Visibility? How to Get Your SaaS Noticed by AI Tools", excerpt: "How to ensure your SaaS product appears in AI-generated answers to boost visibility and drive traffic.", date: "April 2024", slug: "" },
+  { tags: ["AI Visibility", "Reddit Marketing"], title: "5 Ways Reddit Can Drive New Users to Your SaaS in 2024", excerpt: "Discover how to leverage the Reddit community to attract real, engaged users to your SaaS product.", date: "April 18, 2024", slug: "" },
+  { tags: ["SEO & Content"], title: "Content Marketing Trends for SaaS Startups in 2024", excerpt: "Learn about the latest content marketing trends that can help SaaS startups gain visibility, authority, and organic traffic.", date: "April 18, 2024", slug: "" },
+  { tags: ["SEO & Content"], title: "How to Run a Reddit AMA to Gain Exposure for Your SaaS", excerpt: "Get a free visibility audit to see where your product stands in AI answers and community.", date: "April 15, 2024", slug: "" },
 ];
 
 const Blog = () => {
