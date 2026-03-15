@@ -159,7 +159,7 @@ const BlogMarketingStrategyBootstrappedSaaS = () => (
             </ul>
 
             <h3 className="text-xl font-semibold mt-8 mb-3 text-foreground">Step 5: Distribute Content</h3>
-            <p>Publishing a blog is only the first step. Content should also be shared where founders already spend time — LinkedIn, Product Hunt, Indie Hackers — turning one article into multiple discussions.</p>
+            <p>Publishing a blog is only the first step. Content should also be shared where founders already spend time LinkedIn, Product Hunt, Indie Hackers turning one article into multiple discussions.</p>
 
             {/* 6. Key Takeaways */}
             <h2 className="text-2xl font-bold mt-12 mb-4 text-foreground">6. Key Takeaways</h2>
@@ -168,7 +168,7 @@ const BlogMarketingStrategyBootstrappedSaaS = () => (
               <li>Community-driven marketing builds trust faster than promotion.</li>
               <li>Reddit discussions reveal real user problems.</li>
               <li>SEO authority building creates long-term organic visibility.</li>
-              <li>Sustainable growth rarely comes from a single tactic — it emerges from a combination of community participation, helpful content, and consistent engagement.</li>
+              <li>Sustainable growth rarely comes from a single tactic it emerges from a combination of community participation, helpful content, and consistent engagement.</li>
             </ul>
 
             {/* 7. FAQ */}
@@ -188,9 +188,9 @@ const BlogMarketingStrategyBootstrappedSaaS = () => (
             <p>Many founders understand the importance of community marketing and SEO, but executing it consistently can be difficult.</p>
             <p>TrueReech helps startups improve visibility through three key areas:</p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li><strong>AI Visibility Optimization</strong> — Helping startups appear in AI-generated answers and discovery platforms.</li>
-              <li><strong>Reddit Marketing Strategy</strong> — Building credibility inside communities without triggering spam filters or bans.</li>
-              <li><strong>SEO Content Authority</strong> — Creating educational content that attracts founders searching for solutions.</li>
+              <li><strong>AI Visibility Optimization</strong> - Helping startups appear in AI-generated answers and discovery platforms.</li>
+              <li><strong>Reddit Marketing Strategy</strong> - Building credibility inside communities without triggering spam filters or bans.</li>
+              <li><strong>SEO Content Authority</strong> - Creating educational content that attracts founders searching for solutions.</li>
             </ul>
             <p>For many early-stage companies, this approach becomes a more sustainable marketing strategy than relying entirely on paid advertising.</p>
             <p>Over time it builds something far more valuable than short bursts of traffic: <strong>trust, visibility, and long-term discovery.</strong></p>
