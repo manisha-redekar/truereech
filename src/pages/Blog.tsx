@@ -90,14 +90,29 @@ const Blog = () => {
                   transition={{ duration: 0.35, delay: i * 0.08 }}
                   className="gradient-card rounded-xl p-6 shadow-card"
                 >
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    {a.tags.map((t) => (
-                      <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
-                    ))}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{a.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
-                  <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                  {a.slug ? (
+                    <Link to={a.slug} className="block group">
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {a.tags.map((t) => (
+                          <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{a.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
+                      <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                    </Link>
+                  ) : (
+                    <>
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {a.tags.map((t) => (
+                          <span key={t} className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-lg font-bold mb-2">{a.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-3">{a.excerpt}</p>
+                      <span className="text-xs text-muted-foreground flex items-center gap-1"><Sparkles size={12} /> {a.date}</span>
+                    </>
+                  )}
                 </motion.article>
               ))}
             </div>
