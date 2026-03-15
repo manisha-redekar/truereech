@@ -17,6 +17,10 @@ const BlogMarketingStrategyBootstrappedSaaS = () => (
     <article className="py-16 md:py-24 px-4">
       <div className="container mx-auto max-w-3xl">
         <MotionSection>
+          <Link to="/blog" className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary/80 hover:underline transition-colors mb-6">
+            <ArrowLeft size={16} />
+            Back to Blogs
+          </Link>
           <span className="bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full mb-4 inline-block">SEO &amp; Content</span>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             Marketing Strategy for Bootstrapped SaaS Startups (Without Burning Money on Ads)
