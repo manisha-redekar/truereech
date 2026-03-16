@@ -70,7 +70,7 @@ const Services = () => {
             We focus on getting your product discovered where users actually search for solutions:
           </p>
           <p className="text-muted-foreground mb-8">
-            AI answers, community discussions, and high-authority content.
+            Combines AI visibility, community-driven discovery, and strategic content creation to help brands appear where modern search happens.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" onClick={openContact}>Connect Now</Button>
