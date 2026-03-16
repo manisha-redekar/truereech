@@ -27,6 +27,7 @@ const About = () => (
             TrueReech was built around a simple observation.
   Discovery on the internet has shifted.
 People now ask AI tools for recommendations, read Reddit discussions before trying products, and rely on detailed content to compare solutions.
+            
 TrueReech helps SaaS and D2C brands become visible inside those discovery paths.
           </p>
         </MotionSection>
