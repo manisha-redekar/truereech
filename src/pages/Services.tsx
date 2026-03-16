@@ -92,8 +92,7 @@ const Services = () => {
         <p className="text-muted-foreground">
           Whether you're building a SaaS product or running a growing D2C brand, discovery has changed.
 
-People don’t just search Google anymore. They ask AI tools, read Reddit threads, compare tools, and trust long-form content before making decisions.
-
+People don’t just search Google anymore. They ask AI tools, read Reddit threads, compare tools, and trust long-form content before making decisions.</p><p>
 TrueReech helps your brand show up in those moments.
         </p>
       </MotionSection>
