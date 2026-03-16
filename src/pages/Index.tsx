@@ -34,7 +34,7 @@ return <div className="min-h-screen flex flex-col">
             <span className="text-primary">Answers</span>, <span className="text-primary">Reddit Discussions</span>, and Search.
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-            TrueReech helps SaaS companies and D2C brands get discovered in AI answers, Reddit discussions, and search.
+            TrueReech helps brands grow visibility through AI discovery, community-driven marketing, and strategic content creation.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" onClick={openContact}>Connect Now</Button>
