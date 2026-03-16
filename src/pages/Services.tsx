@@ -130,7 +130,7 @@ TrueReech helps your brand show up in those moments.
 
     {/* Service Cards */}
     <section className="py-16 px-4 bg-accent/30">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl">
         {services.map((s, i) => (
           <MotionSection key={s.title} delay={i * 0.15}>
             <div className="gradient-card rounded-xl p-6 shadow-card text-center h-full flex flex-col">
