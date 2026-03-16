@@ -43,7 +43,7 @@ const Blog = () => {
               Tips and Strategies to Help Your <span className="text-primary">SaaS Startup</span> Grow
             </h1>
             <p className="text-muted-foreground text-lg mb-6">
-              Insights on AI visibility, Reddit marketing, SEO content, and more to boost your SaaS product.
+              Practical insights on how modern brands grow discovery through AI search, Reddit communities, and long-term content.
             </p>
             <div className="relative max-w-sm">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
