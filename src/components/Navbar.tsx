@@ -28,6 +28,9 @@ const Navbar = () => {
   <span className="text-[11px] text-muted-foreground">
     Where True Reach Happens
   </span>
+          <span className="text-[11px] text-muted-foreground">
+    Where True Reach Happens
+  </span>
 </Link>
 
         <div className="hidden md:flex items-center gap-8">
