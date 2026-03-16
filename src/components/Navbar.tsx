@@ -29,7 +29,7 @@ const Navbar = () => {
     Where True Reach Happens
   </span>
           <span className="text-[11px] text-muted-foreground">
-    Where True Reach Happens
+    AI Visibility • Community Discovery • Strategic Content
   </span>
 </Link>
 
