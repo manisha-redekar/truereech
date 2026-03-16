@@ -37,6 +37,7 @@ const App = () => (
           <Route path="/ai-visibility-services" element={<AIVisibilityServices />} />
           <Route path="/reddit-marketing-services" element={<RedditMarketingServices />} />
           <Route path="/seo-content-marketing" element={<SEOContentMarketing />} />
+          <Route path="/content-strategy-services" element={<ContentStrategyServices />} />
           <Route path="/ai-visibility-for-saas" element={<AIVisibilityForSaaS />} />
           <Route path="/ai-visibility-for-d2c-brands" element={<AIVisibilityForD2C />} />
           <Route path="/blogs/marketing-strategy-bootstrapped-saas" element={<BlogMarketingStrategyBootstrappedSaaS />} />
