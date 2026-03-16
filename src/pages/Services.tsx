@@ -58,7 +58,8 @@ const plans = [
       "Content structured to appear in AI answers and recommendation queries",
       "Relevant SEO blog content for authority and discovery",
       "Up to 30 community / Reddit posts in targeted discussions",
-      "Ongoing visibility tracking and improvements"
+      "Ongoing visibility tracking and improvements",
+      "Content strategy designed for AI discovery and long-term authority"
     ]
   }
 ];
