@@ -46,7 +46,8 @@ const plans = [
       "Up to 10 SEO blog articles per month (revisable based on strategy)",
       "Up to 20 Reddit/community posts (customizable for relevant discussions)",
       "Keyword and topic research",
-      "Content designed for long-term search visibility"
+      "Content designed for long-term search visibility",
+      "Strategic content planning for blogs and community discovery"
     ]
   },
   {
