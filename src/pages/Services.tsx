@@ -90,7 +90,11 @@ const Services = () => {
       <MotionSection className="container mx-auto max-w-3xl text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Built for <span className="text-primary">SaaS</span> & <span className="text-primary">D2C</span> Brands</h2>
         <p className="text-muted-foreground">
-          Whether you're a SaaS company looking to appear in AI-generated answers and developer communities, or a D2C brand aiming to get recommended in Reddit discussions and buyer research. TrueReech helps you improve discovery through AI visibility, Reddit marketing, and SEO content.
+          Whether you're building a SaaS product or running a growing D2C brand, discovery has changed.
+
+People don’t just search Google anymore. They ask AI tools, read Reddit threads, compare tools, and trust long-form content before making decisions.
+
+TrueReech helps your brand show up in those moments.
         </p>
       </MotionSection>
     </section>
