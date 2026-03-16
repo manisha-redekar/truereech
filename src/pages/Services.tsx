@@ -139,7 +139,7 @@ const Services = () => {
     <section className="py-16 px-4">
       <MotionSection className="container mx-auto text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Pricing Plans</h2>
-        <p className="text-muted-foreground">Simple, transparent pricing based on your SaaS growth stage.</p>
+        <p className="text-muted-foreground">Simple, transparent pricing for brands building long-term visibility.</p>
       </MotionSection>
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
