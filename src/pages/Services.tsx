@@ -27,6 +27,15 @@ const services = [
     description: "Create strategic content that builds authority and helps your brand show up in organic search.",
     bullets: ["Rank on Google for key industry searches.", "Generate organic traffic that grows consistently over time."],
   },
+  {
+    icon: iconSeo, title: "Content Strategy & Creation",
+    description: "Most brands create content randomly. TrueReech focuses on strategic content designed for discovery.",
+    bullets: [
+      "Founder-led insights and educational blog posts.",
+      "Community-style discussions that build trust.",
+      "Positions your brand as a reference in your industry."
+    ],
+  },
 ];
 
 const plans = [
