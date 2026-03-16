@@ -24,14 +24,10 @@ const About = () => (
           </h1>
           <p className="text-lg font-medium mb-4">Smart brand visibility for modern SaaS companies and D2C brands.</p>
           <p className="text-muted-foreground mb-8">
-            TrueReech was built around a simple observation.</p>
-
-<p className="text-muted-foreground mb-8">
-  Discovery on the internet has shifted.</p>
-
-<p>People now ask AI tools for recommendations, read Reddit discussions before trying products, and rely on detailed content to compare solutions.</p>
-
-<p>TrueReech helps SaaS and D2C brands become visible inside those discovery paths.
+            TrueReech was built around a simple observation.
+  Discovery on the internet has shifted.
+People now ask AI tools for recommendations, read Reddit discussions before trying products, and rely on detailed content to compare solutions.
+TrueReech helps SaaS and D2C brands become visible inside those discovery paths.
           </p>
         </MotionSection>
         <MotionSection delay={0.2} direction="right">
