@@ -26,7 +26,8 @@ const About = () => (
           <p className="text-muted-foreground mb-8">
             TrueReech was built around a simple observation.</p>
 
-<p>Discovery on the internet has shifted.</p>
+<p className="text-muted-foreground mb-8">
+  Discovery on the internet has shifted.</p>
 
 <p>People now ask AI tools for recommendations, read Reddit discussions before trying products, and rely on detailed content to compare solutions.</p>
 
