@@ -73,12 +73,12 @@ AI tools, real community conversations, and search results where people are acti
             How <span className="text-primary">TrueReech</span> Helps Your Product Get Discovered
           </h2>
         </MotionSection>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {services.map((s, i) =>
-        <MotionSection key={s.title} delay={i * 0.15}>
-              <ServiceCard icon={s.icon} title={s.title} description={s.description} />
+            <MotionSection key={s.title} delay={i * 0.15}>
+              <ServiceCard icon={s.icon} title={s.title} description={s.description} link={s.link} />
             </MotionSection>
-        )}
+          )}
         </div>
       </div>
     </section>
