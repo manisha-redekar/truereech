@@ -27,6 +27,15 @@ const services = [
     description: "Create strategic content that builds authority and helps your brand show up in organic search.",
     bullets: ["Rank on Google for key industry searches.", "Generate organic traffic that grows consistently over time."],
   },
+  {
+    icon: iconSeo, title: "Content Strategy & Creation",
+    description: "Most brands create content randomly. TrueReech focuses on strategic content designed for discovery.",
+    bullets: [
+      "Founder-led insights and educational blog posts.",
+      "Community-style discussions that build trust.",
+      "Positions your brand as a reference in your industry."
+    ],
+  },
 ];
 
 const plans = [
@@ -37,7 +46,8 @@ const plans = [
       "Up to 10 SEO blog articles per month (revisable based on strategy)",
       "Up to 20 Reddit/community posts (customizable for relevant discussions)",
       "Keyword and topic research",
-      "Content designed for long-term search visibility"
+      "Content designed for long-term search visibility",
+      "Strategic content planning for blogs and community discovery"
     ]
   },
   {
@@ -48,7 +58,8 @@ const plans = [
       "Content structured to appear in AI answers and recommendation queries",
       "Relevant SEO blog content for authority and discovery",
       "Up to 30 community / Reddit posts in targeted discussions",
-      "Ongoing visibility tracking and improvements"
+      "Ongoing visibility tracking and improvements",
+      "Content strategy designed for AI discovery and long-term authority"
     ]
   }
 ];
