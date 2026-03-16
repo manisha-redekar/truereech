@@ -10,7 +10,7 @@ const Footer = () => (
             <span className="text-primary">True</span>Reech
           </p>
           <p className="text-sm text-muted-foreground max-w-xs">
-            Helping SaaS products get discovered through AI visibility, community engagement, and authority content.
+            Helping SaaS and D2C brands grow discovery through AI visibility, community engagement, and strategic content.
           </p>
         </div>
         <div>
