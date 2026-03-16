@@ -15,9 +15,11 @@ import iconReddit from "@/assets/icon-reddit.png";
 import iconSeo from "@/assets/icon-seo.png";
 
 const services = [
-{ icon: iconAi, title: "AI Visibility", description: "Get seen in AI-generated answers by earning AI trust signals and building authority." },
-{ icon: iconReddit, title: "Reddit Marketing", description: "Engage in honest community discussions while driving targeted traffic." },
-{ icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content." }];
+  { icon: iconAi, title: "AI Visibility", description: "Get seen in AI-generated answers by earning AI trust signals and building authority.", link: "/ai-visibility-services" },
+  { icon: iconReddit, title: "Reddit Marketing", description: "Engage in honest community discussions while driving targeted traffic.", link: "/reddit-marketing-services" },
+  { icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content.", link: "/seo-content-marketing" },
+  { icon: iconSeo, title: "Content Strategy & Creation", description: "Plan and create content that actually supports product discovery. From founder-driven insights to educational articles and community-style discussions, we design content that helps your brand become a trusted reference in your space.", link: "/content-strategy-services" },
+];
 
 
 const Index = () => {
@@ -71,12 +73,12 @@ AI tools, real community conversations, and search results where people are acti
             How <span className="text-primary">TrueReech</span> Helps Your Product Get Discovered
           </h2>
         </MotionSection>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {services.map((s, i) =>
-        <MotionSection key={s.title} delay={i * 0.15}>
-              <ServiceCard icon={s.icon} title={s.title} description={s.description} />
+            <MotionSection key={s.title} delay={i * 0.15}>
+              <ServiceCard icon={s.icon} title={s.title} description={s.description} link={s.link} />
             </MotionSection>
-        )}
+          )}
         </div>
       </div>
     </section>

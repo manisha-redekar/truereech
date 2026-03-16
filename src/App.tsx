@@ -12,6 +12,7 @@ import About from "./pages/About.tsx";
 import AIVisibilityServices from "./pages/AIVisibilityServices.tsx";
 import RedditMarketingServices from "./pages/RedditMarketingServices.tsx";
 import SEOContentMarketing from "./pages/SEOContentMarketing.tsx";
+import ContentStrategyServices from "./pages/ContentStrategyServices.tsx";
 import AIVisibilityForSaaS from "./pages/AIVisibilityForSaaS.tsx";
 import AIVisibilityForD2C from "./pages/AIVisibilityForD2C.tsx";
 import BlogMarketingStrategyBootstrappedSaaS from "./pages/BlogMarketingStrategyBootstrappedSaaS.tsx";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/ai-visibility-services" element={<AIVisibilityServices />} />
           <Route path="/reddit-marketing-services" element={<RedditMarketingServices />} />
           <Route path="/seo-content-marketing" element={<SEOContentMarketing />} />
+          <Route path="/content-strategy-services" element={<ContentStrategyServices />} />
           <Route path="/ai-visibility-for-saas" element={<AIVisibilityForSaaS />} />
           <Route path="/ai-visibility-for-d2c-brands" element={<AIVisibilityForD2C />} />
           <Route path="/blogs/marketing-strategy-bootstrapped-saas" element={<BlogMarketingStrategyBootstrappedSaaS />} />
