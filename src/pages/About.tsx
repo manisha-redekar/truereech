@@ -46,10 +46,9 @@ TrueReech helps SaaS and D2C brands become visible inside those discovery paths.
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Our Mission</h2>
           <h3 className="text-xl font-bold mb-4">Helping Brands Get Discovered in the New Era of Digital Discovery</h3>
           <p className="text-muted-foreground mb-10">
-            Our mission is to help businesses adapt to the new era of discovery.
-Today, people don’t just search Google they ask AI tools, read community discussions, and rely on recommendations before choosing products.
+            Our mission is to help brands stay discoverable in the new landscape of product discovery.
 
-TrueReech exists to help brands show up in those moments of discovery.
+Instead of chasing short-term marketing tactics, we focus on building visibility through trusted content, community presence, and AI-readable signals.
           </p>
         </MotionSection>
 
