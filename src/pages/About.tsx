@@ -77,7 +77,9 @@ Instead of chasing short-term marketing tactics, we focus on building visibility
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Why Founders Trust Us</h2>
           <p className="text-muted-foreground mb-6">A trusted partner for modern digital businesses</p>
           <div className="space-y-6">
-            <div className="flex gap-3"><Target className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Brand & Product Focused</p><p className="text-sm text-muted-foreground">We specialize in helping SaaS products and D2C brands stand out in a crowded digital landscape by positioning them where real discovery happens.</p></div></div>
+            <div className="flex gap-3"><Target className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Brand & Product Focused</p><p className="text-sm text-muted-foreground">We work closely with SaaS and D2C brands to understand how their products are discovered, compared, and discussed online.
+
+Our work focuses on placing your brand in the conversations that actually influence buying decisions.</p></div></div>
             <div className="flex gap-3"><Search className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Visibility Experts</p><p className="text-sm text-muted-foreground">Our team has years of experience in AI search optimization, community engagement & content marketing.</p></div></div>
             <div className="flex gap-3"><BarChart3 className="text-primary shrink-0 mt-1" size={20} /><div><p className="font-semibold">Transparent Results</p><p className="text-sm text-muted-foreground">We provide clear reporting on visibility improvements, search presence, and measurable growth so you always know what's working.</p></div></div>
           </div>
