@@ -47,7 +47,7 @@ const plans = [
       "Up to 20 Reddit/community posts (customizable for relevant discussions)",
       "Keyword and topic research",
       "Content designed for long-term search visibility",
-      "Strategic content planning for blogs and community discovery"
+      "10 Strategic content planning for blogs and community discovery"
     ]
   },
   {
@@ -59,7 +59,7 @@ const plans = [
       "Relevant SEO blog content for authority and discovery",
       "Up to 30 community / Reddit posts in targeted discussions",
       "Ongoing visibility tracking and improvements",
-      "Content strategy designed for AI discovery and long-term authority"
+      "20 Content strategy designed for AI discovery and long-term authority"
     ]
   }
 ];
