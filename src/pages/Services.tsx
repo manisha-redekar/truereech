@@ -174,12 +174,18 @@ TrueReech helps your brand show up in those moments.
             </MotionSection>
           ))}
           <MotionSection delay={0.3}>
-            <div className="bg-accent/20 rounded-xl p-6 h-full flex flex-col justify-center">
-              <h3 className="text-lg font-bold mb-4">Why Our Pricing Works</h3>
-              <div className="space-y-3">
-                <p className="text-muted-foreground">We focus on helping brands build lasting visibility and trust.</p>
-               
-              </div>
+            <div className="gradient-card rounded-xl p-6 shadow-card text-left h-full flex flex-col">
+              <h3 className="text-xl font-bold">Custom Plans</h3>
+              <p className="text-lg font-semibold text-primary mb-4">Contact Us</p>
+              <p className="text-sm text-muted-foreground mb-4">For brands that need flexible marketing support beyond standard packages.</p>
+              <ul className="space-y-2 text-sm mb-6 flex-1">
+                <li className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />Reddit Marketing</li>
+                <li className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />SEO Blogs & Content</li>
+                <li className="flex items-start gap-2"><Check size={16} className="text-primary mt-0.5 shrink-0" />Content Creation & Strategy</li>
+              </ul>
+              <Button variant="default" className="w-full" onClick={openContact}>
+                Get Custom Plan
+              </Button>
             </div>
           </MotionSection>
         </div>
