@@ -176,7 +176,7 @@ TrueReech helps your brand show up in those moments.
           <MotionSection delay={0.3}>
             <div className="gradient-card rounded-xl p-6 shadow-card text-left h-full flex flex-col">
               <h3 className="text-xl font-bold">Custom Plans</h3>
-              <p className="text-lg font-semibold text-primary mb-4">Contact Us</p>
+            
              <b key="ai-bold">Only 2 services out of 3 </b>
               <p className="text-sm text-muted-foreground mb-4"> 
                 For brands that need flexible marketing support beyond standard packages.</p>
