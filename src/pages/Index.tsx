@@ -18,7 +18,7 @@ const services = [
   { icon: iconAi, title: "AI Visibility", description: "Get seen in AI-generated answers by earning AI trust signals and building authority.", link: "/ai-visibility-services" },
   { icon: iconReddit, title: "Reddit Marketing", description: "Engage in honest community discussions while driving targeted traffic.", link: "/reddit-marketing-services" },
   { icon: iconSeo, title: "SEO Blogs & Content", description: "Build authority and organic traffic with high-quality, search-optimized content.", link: "/seo-content-marketing" },
-  { icon: iconSeo, title: "Content Strategy & Creation", description: "Plan and create content that actually supports product discovery. From founder-driven insights to educational articles and community-style discussions, we design content that helps your brand become a trusted reference in your space.", link: "/content-strategy-services" },
+  { icon: iconSeo, title: "Content Strategy & Creation", description: "Plan and create content that supports discovery, builds authority, and connects with your audience.", link: "/content-strategy-services" },
 ];
 
 
