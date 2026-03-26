@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MotionSection from "@/components/MotionSection";
+import BlogBackLink from "@/components/BlogBackLink";
 
 const BlogMarketingStrategyBootstrappedSaaS = () => (
   <div className="min-h-screen flex flex-col">
