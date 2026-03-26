@@ -17,6 +17,7 @@ import AIVisibilityForSaaS from "./pages/AIVisibilityForSaaS.tsx";
 import AIVisibilityForD2C from "./pages/AIVisibilityForD2C.tsx";
 import BlogMarketingStrategyBootstrappedSaaS from "./pages/BlogMarketingStrategyBootstrappedSaaS.tsx";
 import BlogAISearchResults from "./pages/BlogAISearchResults.tsx";
+import BlogAIVisibilityForSaaS2026 from "./pages/BlogAIVisibilityForSaaS2026.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
