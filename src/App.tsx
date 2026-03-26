@@ -43,6 +43,7 @@ const App = () => (
           <Route path="/ai-visibility-for-d2c-brands" element={<AIVisibilityForD2C />} />
           <Route path="/blogs/marketing-strategy-bootstrapped-saas" element={<BlogMarketingStrategyBootstrappedSaaS />} />
           <Route path="/blogs/how-to-appear-in-ai-search-results" element={<BlogAISearchResults />} />
+          <Route path="/blogs/ai-visibility-for-saas-2026" element={<BlogAIVisibilityForSaaS2026 />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
