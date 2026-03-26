@@ -21,9 +21,7 @@ const BlogAIVisibilityForSaaS2026 = () => {
       <article className="py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-3xl">
           <MotionSection>
-            <Link to="/blog" className="inline-flex items-center gap-1 text-primary hover:text-primary/80 text-sm font-medium mb-6">
-              <ArrowLeft size={16} /> Back to Blogs
-            </Link>
+            <BlogBackLink />
             <span className="bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full mb-4 inline-block">AI Visibility</span>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
               What is AI Visibility and Why SaaS Founders Must Care in 2026

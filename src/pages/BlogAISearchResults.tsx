@@ -17,6 +17,7 @@ const BlogAISearchResults = () => (
     <article className="py-16 md:py-24 px-4">
       <div className="container mx-auto max-w-3xl">
         <MotionSection>
+          <BlogBackLink />
           <span className="bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full mb-4 inline-block">AI Visibility</span>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
             How to Appear in AI Search Results (ChatGPT, Google AI & Perplexity)
