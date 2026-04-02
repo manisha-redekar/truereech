@@ -18,6 +18,7 @@ import AIVisibilityForD2C from "./pages/AIVisibilityForD2C.tsx";
 import BlogMarketingStrategyBootstrappedSaaS from "./pages/BlogMarketingStrategyBootstrappedSaaS.tsx";
 import BlogAISearchResults from "./pages/BlogAISearchResults.tsx";
 import BlogAIVisibilityForSaaS2026 from "./pages/BlogAIVisibilityForSaaS2026.tsx";
+import AIVisibilityLanding from "./pages/AIVisibilityLanding.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/blogs/marketing-strategy-bootstrapped-saas" element={<BlogMarketingStrategyBootstrappedSaaS />} />
           <Route path="/blogs/how-to-appear-in-ai-search-results" element={<BlogAISearchResults />} />
           <Route path="/blogs/ai-visibility-for-saas-2026" element={<BlogAIVisibilityForSaaS2026 />} />
+          <Route path="/check-ai-visibility" element={<AIVisibilityLanding />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -43,7 +43,7 @@ AI tools, real community conversations, and search results where people are acti
           <div className="flex gap-4 flex-wrap">
             <Button size="lg" onClick={openContact}>Connect Now</Button>
             <Button size="lg" variant="outline" asChild>
-              <Link to="/services">See How It Works</Link>
+              <Link to="/check-ai-visibility">Check AI Visibility</Link>
             </Button>
           </div>
         </MotionSection>
