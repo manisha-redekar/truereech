@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const AIVisibilityLanding = () => {
   useEffect(() => {
-    window.location.href = "https://check-ai-visibility.lovable.app/";
+   window.open("https://check-ai-visibility.lovable.app", "_blank");
   }, []);
 
   return null;
