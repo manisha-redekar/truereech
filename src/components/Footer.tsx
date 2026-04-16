@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const Footer = () => (
   <footer className="gradient-footer border-t border-border">
@@ -29,9 +29,11 @@ const Footer = () => (
             <Link to="/about" className="hover:text-primary">Contact</Link>
           </div>
           <div className="flex gap-4 mt-4">
-            <a href="#" className="text-muted-foreground hover:text-primary"><Linkedin size={20} /></a>
-            <a href="#" className="text-muted-foreground hover:text-primary"><Twitter size={20} /></a>
-            <a href="#" className="text-muted-foreground hover:text-primary"><Mail size={20} /></a>
+            <a href="https://www.linkedin.com/company/truereech/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Linkedin size={20} /></a>
+            <a href="https://bsky.app/profile/truereech.bsky.social" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.601 3.476 6.159 3.226-4.56.718-5.703 3.092-3.2 5.453 4.148 3.79 6.318-1.268 6.392-1.553.025-.097.037-.142.025-.097-.012-.045 0 0 .025.097.074.285 2.244 5.342 6.392 1.553 2.503-2.36 1.36-4.735-3.2-5.453 2.558.25 5.374-.6 6.16-3.226C19.621 9.418 20 4.458 20 3.768c0-.69-.139-1.861-.902-2.203-.659-.3-1.664-.62-4.3 1.24C12.046 4.747 9.087 8.686 8 10.8h4z" transform="translate(2 1)"/></svg>
+            </a>
+            <a href="mailto:hello@truereech.com" className="text-muted-foreground hover:text-primary"><Mail size={20} /></a>
           </div>
         </div>
       </div>
