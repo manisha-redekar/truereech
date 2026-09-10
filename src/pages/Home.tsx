@@ -41,7 +41,7 @@ const Home = () => (
       <meta property="og:title" content="Manisha — Digital Visibility & Content Freelancer | TrueReech" />
       <meta
         property="og:description"
-        content="I help businesses improve how they are found, understood and presented online — through search visibility, useful content, websites and social media."
+        content="I help businesses improve how they are found, understood and presented online, through search visibility, useful content, websites and social media."
       />
       <meta property="og:url" content={`${SITE_URL}/`} />
       <meta property="og:type" content="website" />
@@ -49,7 +49,7 @@ const Home = () => (
       <meta name="twitter:title" content="Manisha — Digital Visibility & Content Freelancer | TrueReech" />
       <meta
         name="twitter:description"
-        content="I help businesses improve how they are found, understood and presented online — through search visibility, useful content, websites and social media."
+        content="I help businesses improve how they are found, understood and presented online, through search visibility, useful content, websites and social media."
       />
       <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
     </Helmet>
@@ -65,7 +65,7 @@ const Home = () => (
             Get Found.<br />Get Understood.<br />Get Chosen.
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-snug md:text-xl">
-            I help businesses improve how they are found, understood and presented online — through search
+            I help businesses improve how they are found, understood and presented online, through search
             visibility, useful content, websites and social media.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
