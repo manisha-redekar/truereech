@@ -131,7 +131,10 @@ const Home = () => (
         content="TrueReech helps businesses improve Google and AI search visibility through SEO content, website content, social media management and digital visibility strategy."
       />
       <meta property="og:url" content={`${SITE_URL}/`} />
+      <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Digital Marketing & AI Search Visibility Services | TrueReech" />
+      <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
       <meta
         name="twitter:description"
         content="TrueReech helps businesses improve Google and AI search visibility through SEO content, website content, social media management and digital visibility strategy."
@@ -277,7 +280,7 @@ const Home = () => (
       {/* SERVICES */}
       <section id="services" className="section">
         <div className="wrap">
-          <p className="eyebrow">What I Do</p>
+          <p className="eyebrow">Services</p>
           <h2 className="mt-5 max-w-3xl text-3xl leading-tight md:text-[2.6rem]">
             Everything your digital presence needs to become more useful, visible and convincing.
           </h2>
@@ -329,10 +332,11 @@ const Home = () => (
         </div>
       </section>
 
-      {/* DIFFERENT */}
+      {/* WHY TRUEREECH */}
       <section className="section bg-foreground text-background">
         <div className="wrap">
-          <h2 className="max-w-3xl text-3xl leading-tight md:text-[2.8rem]">
+          <p className="eyebrow text-background/50">Why TrueReech</p>
+          <h2 className="mt-5 max-w-3xl text-3xl leading-tight md:text-[2.8rem]">
             Not another agency that just keeps your feed busy.
           </h2>
           <div className="mt-14 grid gap-px bg-background/20 sm:grid-cols-2">

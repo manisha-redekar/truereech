@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { NAV } from "@/lib/site";
 
 const SiteHeader = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
@@ -33,7 +40,7 @@ const SiteHeader = () => {
             to="/contact"
             className="border border-foreground px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-foreground hover:text-background"
           >
-            Let&rsquo;s Talk &rarr;
+            Get a Free Visibility Check &rarr;
           </Link>
         </nav>
 
@@ -65,9 +72,9 @@ const SiteHeader = () => {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-5 block border border-foreground px-4 py-3 text-center text-sm font-semibold"
+            className="mt-5 block bg-foreground px-4 py-3 text-center text-sm font-semibold text-background"
           >
-            Let&rsquo;s Talk &rarr;
+            Get a Free Visibility Check &rarr;
           </Link>
         </nav>
       )}

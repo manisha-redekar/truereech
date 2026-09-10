@@ -56,6 +56,7 @@ const Contact = () => {
           content="Talk to TrueReech about AI search visibility, SEO content, website content, social media management and digital marketing."
         />
         <meta property="og:url" content={`${SITE_URL}/contact`} />
+        <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
         <meta name="twitter:title" content="Contact TrueReech | Digital Visibility & Marketing Services" />
         <meta
           name="twitter:description"
