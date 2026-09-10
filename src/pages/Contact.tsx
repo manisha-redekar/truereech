@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import { SITE_URL, WHATSAPP_NUMBER } from "@/lib/site";
+import { SITE_URL, SOCIALS } from "@/lib/site";
 
 const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
 
@@ -10,9 +10,9 @@ const needs = [
   "AI / Google visibility",
   "SEO blogs & content",
   "Website content",
-  "Social media management",
+  "Social media",
   "Ad creatives",
-  "Complete digital visibility",
+  "Content strategy",
   "Not sure yet",
 ];
 
@@ -44,23 +44,24 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contact TrueReech | Digital Visibility &amp; Marketing Services</title>
+        <title>Contact Manisha | TrueReech</title>
         <meta
           name="description"
-          content="Talk to TrueReech about AI search visibility, SEO content, website content, social media management and digital marketing."
+          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
         />
         <link rel="canonical" href={`${SITE_URL}/contact`} />
-        <meta property="og:title" content="Contact TrueReech | Digital Visibility & Marketing Services" />
+        <meta property="og:title" content="Contact Manisha | TrueReech" />
         <meta
           property="og:description"
-          content="Talk to TrueReech about AI search visibility, SEO content, website content, social media management and digital marketing."
+          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
         />
         <meta property="og:url" content={`${SITE_URL}/contact`} />
-        <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
-        <meta name="twitter:title" content="Contact TrueReech | Digital Visibility & Marketing Services" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Manisha | TrueReech" />
         <meta
           name="twitter:description"
-          content="Talk to TrueReech about AI search visibility, SEO content, website content, social media management and digital marketing."
+          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
         />
       </Helmet>
 
@@ -69,30 +70,38 @@ const Contact = () => {
       <main className="px-6 py-16 md:px-10 md:py-24">
         <div className="wrap grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <h1 className="text-[2.25rem] leading-[1.08] md:text-5xl">Let&rsquo;s Talk About Your Visibility.</h1>
+            <h1 className="text-[2.25rem] leading-[1.08] md:text-5xl">Let&rsquo;s Talk.</h1>
             <p className="prose-body mt-6 max-w-md">
-              Tell me a little about your business, what you&rsquo;re currently doing online and where you feel
-              you&rsquo;re getting stuck.
+              Tell me a little about your business, what you&rsquo;re trying to improve and what you&rsquo;d like help
+              with.
             </p>
-            {WHATSAPP_NUMBER && (
-              <div className="mt-10 border-t border-border pt-6">
-                <p className="text-sm font-semibold">Prefer WhatsApp?</p>
+            <div className="mt-10 border-t border-border pt-6">
+              <p className="text-sm font-semibold">Find me elsewhere</p>
+              <div className="mt-4 flex flex-col gap-3 text-sm">
                 <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                  href={SOCIALS.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block border border-foreground px-5 py-3 text-sm font-semibold transition-colors hover:bg-foreground hover:text-background"
+                  className="w-fit text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  Chat on WhatsApp &rarr;
+                  LinkedIn &nearr;
+                </a>
+                <a
+                  href={SOCIALS.bluesky}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-fit text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  Bluesky &nearr;
                 </a>
               </div>
-            )}
+            </div>
           </div>
 
           <div className="border border-border p-6 md:p-9">
             {status === "sent" ? (
               <div className="py-10">
-                <h2 className="text-2xl">Thanks — your enquiry has been sent.</h2>
+                <h2 className="text-2xl">Thanks — your message has been sent.</h2>
                 <p className="prose-body mt-3">I usually reply within one working day.</p>
               </div>
             ) : (
@@ -140,7 +149,7 @@ const Contact = () => {
                     disabled={status === "sending"}
                     className="w-full bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-opacity hover:opacity-85 disabled:opacity-60 sm:w-auto"
                   >
-                    {status === "sending" ? "Sending…" : "Send Enquiry →"}
+                    {status === "sending" ? "Sending…" : "Send Message →"}
                   </button>
                 </div>
               </form>

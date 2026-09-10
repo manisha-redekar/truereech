@@ -21,7 +21,13 @@ const SiteHeader = () => {
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-8 md:flex">
-          {NAV.map((item) => (
+          <Link
+            to="/"
+            className="text-[13px] font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Home
+          </Link>
+          {NAV.filter((item) => item.label !== "Home").map((item) => (
             <a
               key={item.label}
               href={item.href}
@@ -56,7 +62,14 @@ const SiteHeader = () => {
 
       {open && (
         <nav aria-label="Mobile" className="border-t border-border bg-background px-6 pb-6 pt-2 md:hidden">
-          {NAV.map((item) => (
+          <Link
+            to="/"
+            onClick={() => setOpen(false)}
+            className="block border-b border-border py-3 text-sm font-medium"
+          >
+            Home
+          </Link>
+          {NAV.filter((item) => item.label !== "Home").map((item) => (
             <a
               key={item.label}
               href={item.href}
