@@ -1,58 +1,19 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { ContactModalProvider } from "@/hooks/useContactModal";
-import Index from "./pages/Index.tsx";
-import Services from "./pages/Services.tsx";
-import Blog from "./pages/Blog.tsx";
-import About from "./pages/About.tsx";
-import AIVisibilityServices from "./pages/AIVisibilityServices.tsx";
-import RedditMarketingServices from "./pages/RedditMarketingServices.tsx";
-import SEOContentMarketing from "./pages/SEOContentMarketing.tsx";
-import ContentStrategyServices from "./pages/ContentStrategyServices.tsx";
-import AIVisibilityForSaaS from "./pages/AIVisibilityForSaaS.tsx";
-import AIVisibilityForD2C from "./pages/AIVisibilityForD2C.tsx";
-import BlogMarketingStrategyBootstrappedSaaS from "./pages/BlogMarketingStrategyBootstrappedSaaS.tsx";
-import BlogAISearchResults from "./pages/BlogAISearchResults.tsx";
-import BlogAIVisibilityForSaaS2026 from "./pages/BlogAIVisibilityForSaaS2026.tsx";
-import AIVisibilityLanding from "./pages/AIVisibilityLanding.tsx";
+import Home from "./pages/Home.tsx";
+import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
-const queryClient = new QueryClient();
-
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-    <TooltipProvider>
-      <ContactModalProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/ai-visibility-services" element={<AIVisibilityServices />} />
-          <Route path="/reddit-marketing-services" element={<RedditMarketingServices />} />
-          <Route path="/seo-content-marketing" element={<SEOContentMarketing />} />
-          <Route path="/content-strategy-services" element={<ContentStrategyServices />} />
-          <Route path="/ai-visibility-for-saas" element={<AIVisibilityForSaaS />} />
-          <Route path="/ai-visibility-for-d2c-brands" element={<AIVisibilityForD2C />} />
-          <Route path="/blogs/marketing-strategy-bootstrapped-saas" element={<BlogMarketingStrategyBootstrappedSaaS />} />
-          <Route path="/blogs/how-to-appear-in-ai-search-results" element={<BlogAISearchResults />} />
-          <Route path="/blogs/ai-visibility-for-saas-2026" element={<BlogAIVisibilityForSaaS2026 />} />
-          <Route path="/check-ai-visibility" element={<AIVisibilityLanding />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-      </ContactModalProvider>
-    </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </HelmetProvider>
 );
 
 export default App;
