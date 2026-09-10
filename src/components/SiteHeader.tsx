@@ -40,7 +40,7 @@ const SiteHeader = () => {
             to="/contact"
             className="border border-foreground px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-foreground hover:text-background"
           >
-            Get a Free Visibility Check &rarr;
+            Let&rsquo;s Talk &rarr;
           </Link>
         </nav>
 
@@ -74,7 +74,7 @@ const SiteHeader = () => {
             onClick={() => setOpen(false)}
             className="mt-5 block bg-foreground px-4 py-3 text-center text-sm font-semibold text-background"
           >
-            Get a Free Visibility Check &rarr;
+            Let&rsquo;s Talk &rarr;
           </Link>
         </nav>
       )}
