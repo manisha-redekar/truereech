@@ -21,6 +21,13 @@ const discovery = ["Google", "AI Search", "Social Media", "Website", "Content"];
 
 type Project = { name: string; category: string; desc: string; url: string };
 
+const projectWordmarks: Record<string, string> = {
+  Feedspace: "feedspace",
+  Halo: "halo",
+  DevTown: "devtown",
+  Settel: "settel",
+};
+
 const projects: Project[] = [
   {
     name: "Feedspace",
@@ -120,13 +127,27 @@ const personSchema = {
   address: { "@type": "PostalAddress", addressCountry: "IN" },
 };
 
+const LinkedInIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M5.2 3.5A2.2 2.2 0 1 1 5.2 8a2.2 2.2 0 0 1 0-4.5ZM3.4 9.8h3.6v10.7H3.4V9.8Zm5.8 0h3.4v1.5h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.6v5.5H17v-4.9c0-1.2 0-2.8-1.8-2.8s-2.1 1.3-2.1 2.7v5H9.2V9.8Z" />
+  </svg>
+);
+
+const BlueskyIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M12 10.5C10.9 8.2 7.9 4 4.7 4 1.6 4 2 7.8 2.3 9.6c.3 1.7 1.3 2.8 3.2 3.1-1.9.3-2.9 1.4-3.2 3.1C2 17.7 1.6 21.5 4.7 21.5c3.2 0 6.2-4.2 7.3-6.5 1.1 2.3 4.1 6.5 7.3 6.5 3.1 0 2.7-3.8 2.4-5.7-.3-1.7-1.3-2.8-3.2-3.1 1.9-.3 2.9-1.4 3.2-3.1.3-1.8.7-5.6-2.4-5.6-3.2 0-6.2 4.2-7.3 6.5Z" />
+  </svg>
+);
+
 const SocialLinks = () => (
-  <div className="flex items-center gap-5 text-sm">
-    <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer" className="link-underline text-muted-foreground">
+  <div className="flex items-center gap-4 text-sm">
+    <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-ink">
+      <LinkedInIcon />
       LinkedIn
     </a>
     <span className="text-border">|</span>
-    <a href={SOCIALS.bluesky} target="_blank" rel="noopener noreferrer" className="link-underline text-muted-foreground">
+    <a href={SOCIALS.bluesky} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-muted-foreground transition-colors hover:text-ink">
+      <BlueskyIcon />
       Bluesky
     </a>
   </div>
@@ -332,10 +353,17 @@ const Home = () => {
               {projects.map((p) => (
                 <li
                   key={p.name}
-                  className="flex min-h-[190px] w-[78%] shrink-0 snap-start flex-col border border-border bg-card p-5 sm:w-[46%] lg:w-[calc((100%-3.75rem)/4)]"
+                  className="flex min-h-[190px] w-[78%] shrink-0 snap-start flex-col rounded-lg border border-border bg-card p-5 shadow-[0_4px_18px_rgba(30,30,30,0.05)] sm:w-[46%] lg:w-[calc((100%-3.75rem)/4)]"
                 >
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink">{p.category}</p>
-                  <h3 className="mt-2 text-[17px]">{p.name}</h3>
+                  <div className="flex min-h-7 items-center gap-2.5">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full border border-ink/30 text-[11px] font-bold text-ink" aria-hidden="true">
+                      {p.name.charAt(0)}
+                    </span>
+                    <h3 className="text-[17px] font-extrabold tracking-[-0.03em] text-ink">
+                      {projectWordmarks[p.name] ?? p.name}
+                    </h3>
+                  </div>
+                  <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink">{p.category}</p>
                   <p className="prose-body mt-2 text-[14px]">{p.desc}</p>
                   <a
                     href={p.url}
