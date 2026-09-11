@@ -17,8 +17,6 @@ const helpWith = [
   { title: "Course content", note: "Helping brands create and refine useful courses for their audience." },
 ];
 
-const discovery = ["Google", "AI Search", "Social Media", "Website", "Content"];
-
 type Project = { name: string; category: string; desc: string; url: string };
 
 const projectWordmarks: Record<string, string> = {
@@ -213,20 +211,11 @@ const Home = () => {
             <div className="relative">
               <img
                 src={heroWorkspace}
-                alt="Illustrated desk with a laptop and a search interface representing search, AI search, website, content and social media"
+                alt="Editorial illustration of a woman working at a laptop beside a search interface, books and a plant"
                 width={1024}
                 height={832}
-                className="mx-auto w-full max-w-[520px]"
+                className="mx-auto h-auto w-full max-w-[520px]"
               />
-              <ul className="mx-auto mt-2 flex max-w-[520px] flex-wrap justify-center gap-x-5 gap-y-2 text-[12px] font-medium text-muted-foreground">
-                {discovery.map((d) => (
-                  <li key={d} className="flex items-center gap-2">
-                    <span className="h-1 w-1 rounded-full bg-ink" aria-hidden />
-                    {d}
-                  </li>
-                ))}
-              </ul>
-              <p className="annot mt-3 text-center">&ldquo;Visibility creates opportunities.&rdquo;</p>
             </div>
           </div>
         </section>
@@ -252,20 +241,12 @@ const Home = () => {
             <div className="lg:border-l lg:border-border lg:pl-10">
               <img
                 src={aboutTrio}
-                alt="Line illustrations of a target, a document and a rising chart"
+                alt="Editorial illustration of practical strategies, useful content and real opportunities"
                 width={1152}
                 height={576}
                 loading="lazy"
-                className="w-full max-w-[420px]"
+                className="h-auto w-full max-w-[420px]"
               />
-              <div className="mt-3 grid max-w-[420px] grid-cols-3 gap-4 text-center text-[12px] font-medium leading-tight text-muted-foreground">
-                <span>Practical Strategies</span>
-                <span>Useful Content</span>
-                <span>Real Opportunities</span>
-              </div>
-              <p className="annot mt-6 max-w-[420px] text-center">
-                &ldquo;Good businesses should be easy to find.&rdquo;
-              </p>
             </div>
           </div>
         </section>
@@ -280,22 +261,15 @@ const Home = () => {
                 <br />
                 that works together.
               </h2>
-              <div className="mt-8 flex items-center gap-4">
+              <div className="mt-8">
                 <img
                   src={searchToOpportunity}
-                  alt="Illustration of a search results page turning into a business opportunity"
+                  alt="Editorial illustration of a search results page turning into real opportunities"
                   width={1024}
                   height={768}
                   loading="lazy"
-                  className="w-[62%] max-w-[280px]"
+                  className="h-auto w-full max-w-[420px]"
                 />
-                <p className="annot">
-                  &larr; From searches
-                  <br />
-                  to real
-                  <br />
-                  opportunities
-                </p>
               </div>
             </div>
 
@@ -405,17 +379,14 @@ const Home = () => {
                 Let&rsquo;s Talk &rarr;
               </Link>
             </div>
-            <p className="annot text-background/70 md:text-right">
-              Ideas
-              <br />
-              &darr;
-              <br />
-              Content
-              <br />
-              &darr;
-              <br />
-              Growth
-            </p>
+            <img
+              src={searchToOpportunity}
+              alt="Handwritten editorial note reading Ideas, Content, Growth"
+              width={384}
+              height={320}
+              loading="lazy"
+              className="h-auto w-full max-w-[150px] justify-self-end md:max-w-[170px]"
+            />
           </div>
         </section>
       </main>
