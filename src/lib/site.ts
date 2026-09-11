@@ -6,9 +6,4 @@ export const SOCIALS = {
 };
 
 export const CONTACT_EMAIL = "";
-export const WHATSAPP_NUMBER = "";
-
-export const NAV = [
-  { label: "Home", href: "/#top" },
-  { label: "Work", href: "/#work" },
-];
+export const WHATSAPP_NUMBER = ""; // digits only, e.g. "919999999999"
