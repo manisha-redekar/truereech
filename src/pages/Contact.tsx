@@ -84,7 +84,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="w-fit text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  LinkedIn &nearr;
+                  LinkedIn;
                 </a>
                 <a
                   href={SOCIALS.bluesky}
@@ -92,7 +92,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="w-fit text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  Bluesky &nearr;
+                  Bluesky;
                 </a>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Contact = () => {
           <div className="border border-border p-6 md:p-9">
             {status === "sent" ? (
               <div className="py-10">
-                <h2 className="text-2xl">Thanks — your message has been sent.</h2>
+                <h2 className="text-2xl">Thanks, your message has been sent.</h2>
                 <p className="prose-body mt-3">I usually reply within one working day.</p>
               </div>
             ) : (
@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="business">Business name</label>
-                  <input className={fieldClass} id="business" name="business" autoComplete="organization" />
+                  <input className={fieldClass} id="business" name="business" required autoComplete="organization" />
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="email">Email</label>
@@ -120,7 +120,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="phone">WhatsApp / Phone</label>
-                  <input className={fieldClass} id="phone" name="phone" type="tel" autoComplete="tel" />
+                  <input className={fieldClass} id="phone" name="phone" type="tel" required autoComplete="tel" />
                 </div>
                 <div className="sm:col-span-2">
                   <label className={labelClass} htmlFor="profile">Website / Instagram</label>
