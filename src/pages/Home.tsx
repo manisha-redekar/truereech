@@ -113,7 +113,7 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Manisha",
-  jobTitle: "Independent digital visibility and content specialist",
+  jobTitle: "Independent digital visibility and content freelancer",
   url: SITE_URL,
   brand: { "@type": "Brand", name: "TrueReech" },
   sameAs: [SOCIALS.linkedin, SOCIALS.bluesky],
@@ -144,16 +144,16 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Digital Marketing &amp; AI Search Visibility Services | TrueReech</title>
+        <title>Manisha — Digital Visibility, Content &amp; Search | TrueReech</title>
         <meta
           name="description"
-          content="TrueReech helps businesses improve Google and AI search visibility through SEO content, website content, social media management and digital visibility strategy."
+          content="Manisha helps businesses become easier to find, understand and trust online through search visibility, useful content, websites and social media."
         />
         <link rel="canonical" href={`${SITE_URL}/`} />
-        <meta property="og:title" content="Digital Marketing & AI Search Visibility Services | TrueReech" />
+        <meta property="og:title" content="Manisha — Digital Visibility, Content & Search | TrueReech" />
         <meta
           property="og:description"
-          content="TrueReech helps businesses improve Google and AI search visibility through SEO content, website content, social media management and digital visibility strategy."
+          content="Manisha helps businesses become easier to find, understand and trust online through search visibility, useful content, websites and social media."
         />
         <meta property="og:url" content={`${SITE_URL}/`} />
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
@@ -218,8 +218,7 @@ const Home = () => {
               <h2 className="mt-4 text-2xl leading-snug md:text-[2rem]">Hi, I&rsquo;m Manisha.</h2>
               <p className="prose-body mt-4 max-w-xl">
                 I work independently with businesses that want a stronger online presence. From SEO blogs and website
-                content to social media and AI-search visibility — I work directly with you, without the layers of a
-                large agency.
+                content to social media and AI-search visibility — I work directly with you, without unnecessary layers.
               </p>
               <p className="prose-body mt-3 max-w-xl">
                 No big teams. No unnecessary layers. Just focused work that helps you grow.

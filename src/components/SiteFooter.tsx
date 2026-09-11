@@ -7,7 +7,7 @@ const SiteFooter = () => (
       <div>
         <p className="text-[13px] font-extrabold uppercase tracking-[0.22em]">TrueReech</p>
         <p className="mt-1 text-[11px] text-muted-foreground">by Manisha</p>
-        <p className="mt-3 text-sm text-muted-foreground">Digital visibility • Content • Search</p>
+        <p className="mt-3 text-sm text-muted-foreground">Digital visibility &bull; Content &bull; Search</p>
       </div>
 
       <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
