@@ -194,7 +194,7 @@ const Home = () => {
                 Get Chosen.
               </h1>
               <p className="prose-body mt-6 max-w-md text-foreground/80">
-                I help businesses become easier to find, understand and trust online — through search visibility,
+                I help businesses become easier to find, understand and trust online, through search visibility,
                 useful content, websites and social media.
               </p>
               <Link
@@ -228,7 +228,7 @@ const Home = () => {
               <h2 className="mt-4 text-2xl leading-snug md:text-[2rem]">Hi, I&rsquo;m Manisha.</h2>
               <p className="prose-body mt-4 max-w-xl">
                 I work independently with businesses that want a stronger online presence. From SEO blogs and website
-                content to social media and AI-search visibility — I work directly with you, without unnecessary layers.
+                content to social media and AI-search visibility, I work directly with you, without unnecessary layers.
               </p>
               <p className="prose-body mt-3 max-w-xl">
                 No big teams. No unnecessary layers. Just focused work that helps you grow.
