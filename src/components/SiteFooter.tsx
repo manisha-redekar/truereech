@@ -2,51 +2,30 @@ import { Link } from "react-router-dom";
 import { SOCIALS } from "@/lib/site";
 
 const SiteFooter = () => (
-  <footer className="border-t border-border px-6 py-14 md:px-10">
-    <div className="wrap grid gap-10 md:grid-cols-3">
+  <footer className="border-t border-border px-6 py-12 md:px-10">
+    <div className="wrap flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
       <div>
         <p className="text-sm font-extrabold uppercase tracking-[0.14em]">
-          True<span className="font-medium">Reech</span>
+          True<span className="font-medium">Reech</span> — by Manisha
         </p>
-        <p className="prose-body mt-3 max-w-xs">
-          Manisha — independent digital visibility &amp; content freelancer.
-        </p>
+        <p className="mt-3 text-sm text-muted-foreground">Digital visibility • Content • Search</p>
       </div>
 
-      <div>
-        <p className="eyebrow">Navigate</p>
-        <div className="mt-4 flex flex-col gap-2 text-sm text-muted-foreground">
-          <Link to="/" className="w-fit transition-colors hover:text-foreground">Home</Link>
-          <a href="/#work" className="w-fit transition-colors hover:text-foreground">Work</a>
-          <Link to="/contact" className="w-fit transition-colors hover:text-foreground">Contact</Link>
-        </div>
-      </div>
-
-      <div>
-        <p className="eyebrow">Elsewhere</p>
-        <div className="mt-4 flex flex-col gap-2 text-sm text-muted-foreground">
-          <a
-            href={SOCIALS.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-fit transition-colors hover:text-foreground"
-          >
-            LinkedIn &nearr;
-          </a>
-          <a
-            href={SOCIALS.bluesky}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-fit transition-colors hover:text-foreground"
-          >
-            Bluesky &nearr;
-          </a>
-        </div>
+      <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+        <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground">
+          LinkedIn
+        </a>
+        <a href={SOCIALS.bluesky} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground">
+          Bluesky
+        </a>
+        <Link to="/contact" className="transition-colors hover:text-foreground">
+          Contact
+        </Link>
       </div>
     </div>
 
-    <div className="wrap mt-12 border-t border-border pt-6 text-xs text-muted-foreground">
-      &copy; 2026 TrueReech.
+    <div className="wrap mt-10 border-t border-border pt-6 text-xs text-muted-foreground">
+      © 2026 TrueReech. All rights reserved.
     </div>
   </footer>
 );
