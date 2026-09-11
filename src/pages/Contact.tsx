@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="business">Business name</label>
-                  <input className={fieldClass} id="business" name="business" required autoComplete="organization" />
+                  <input className={fieldClass} id="business" name="business" autoComplete="organization" />
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="email">Email</label>
@@ -120,7 +120,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className={labelClass} htmlFor="phone">WhatsApp / Phone</label>
-                  <input className={fieldClass} id="phone" name="phone" type="tel" required autoComplete="tel" />
+                  <input className={fieldClass} id="phone" name="phone" type="tel" autoComplete="tel" />
                 </div>
                 <div className="sm:col-span-2">
                   <label className={labelClass} htmlFor="profile">Website / Instagram</label>
