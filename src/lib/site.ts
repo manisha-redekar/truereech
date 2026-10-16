@@ -6,4 +6,5 @@ export const SOCIALS = {
 };
 
 export const CONTACT_EMAIL = "";
-export const WHATSAPP_NUMBER = ""; // digits only, e.g. "919999999999"
+export const PHONE_NUMBER = "+918762845114";
+export const WHATSAPP_NUMBER = "918762845114";

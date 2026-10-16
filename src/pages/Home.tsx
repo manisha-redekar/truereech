@@ -4,18 +4,15 @@ import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, SOCIALS } from "@/lib/site";
-import heroWorkspace from "@/assets/hero-workspace.png";
-import aboutTrio from "@/assets/about-trio.png";
-import searchToOpportunity from "@/assets/search-to-opportunity.png";
 
 const helpWith = [
-  { title: "Search & AI visibility", note: "Making a business easier to find and understand across search and AI answers." },
-  { title: "SEO blogs & content", note: "Articles built around what customers actually search for." },
-  { title: "Website content", note: "Clearer messaging that helps visitors understand your business." },
-  { title: "Social media management", note: "Consistent content that builds familiarity and trust." },
-  { title: "Ad creatives", note: "Creative concepts and copy designed around the audience and offer." },
-  { title: "Course content", note: "Helping brands create and refine useful courses for their audience." },
-];
+  { title: "Search Engine Optimisation (SEO)", note: "Clearer technical and on-page foundations for organic visibility." },
+  { title: "Content strategy and SEO blog writing", note: "Useful content built around real audience needs and search intent." },
+  { title: "AI search visibility and AEO", note: "Structured, useful answers that are easier for people and systems to understand." },
+  { title: "Generative Engine Optimisation", note: "Consistent business context and source-led content for changing discovery habits." },
+  { title: "Website content and on-page SEO", note: "Clearer messaging that helps visitors understand your business." },
+  { title: "Social media content and management", note: "Relevant content aligned with the business, audience, and agreed scope." },
+]
 
 type Project = { name: string; category: string; desc: string; url: string };
 
@@ -197,12 +194,14 @@ const Home = () => {
                 I help businesses become easier to find, understand and trust online, through search visibility,
                 useful content, websites and social media.
               </p>
-              <Link
-                to="/contact"
-                className="mt-7 inline-block bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-opacity hover:opacity-85"
-              >
-                Let&rsquo;s Talk &rarr;
-              </Link>
+              <div className="mt-7 flex flex-wrap items-center gap-4">
+                <Link to="/contact/" className="bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-opacity hover:opacity-85">
+                  Let&rsquo;s Talk &rarr;
+                </Link>
+                <Link to="/work/" className="text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">
+                  Explore my work &rarr;
+                </Link>
+              </div>
               <div className="mt-7">
                 <SocialLinks />
               </div>
@@ -210,7 +209,7 @@ const Home = () => {
 
             <div className="relative">
               <img
-                src={heroWorkspace}
+                src="/images/truereech-hero-illustration.png"
                 alt="Editorial illustration of a woman working at a laptop beside a search interface, books and a plant"
                 width={1024}
                 height={832}
@@ -233,14 +232,15 @@ const Home = () => {
               <p className="prose-body mt-3 max-w-xl">
                 No big teams. No unnecessary layers. Just focused work that helps you grow.
               </p>
-              <div className="mt-6">
+              <div className="mt-6 flex flex-wrap items-center gap-5">
                 <SocialLinks />
+                <Link to="/about/" className="text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">More about me &rarr;</Link>
               </div>
             </div>
 
             <div className="lg:border-l lg:border-border lg:pl-10">
               <img
-                src={aboutTrio}
+                src="/images/truereech-about-illustration.png"
                 alt="Editorial illustration of practical strategies, useful content and real opportunities"
                 width={1152}
                 height={576}
@@ -261,9 +261,10 @@ const Home = () => {
                 <br />
                 that works together.
               </h2>
+              <Link to="/services/" className="mt-4 inline-block text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">See all services &rarr;</Link>
               <div className="mt-8">
                 <img
-                  src={searchToOpportunity}
+                  src="/images/truereech-search-opportunities-illustration.png"
                   alt="Editorial illustration of a search results page turning into real opportunities"
                   width={1024}
                   height={768}
@@ -353,6 +354,36 @@ const Home = () => {
           </div>
         </section>
 
+        {/* THOUGHTFUL APPROACH */}
+        <section className="section bg-surface">
+          <div className="wrap grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="eyebrow">How I work</p>
+              <h2 className="mt-4 max-w-md text-[1.75rem] leading-tight md:text-[2.25rem]">A more thoughtful approach to digital growth.</h2>
+              <p className="prose-body mt-5 max-w-md">Good digital marketing starts with understanding what your audience needs, how they search, and what makes your business worth choosing.</p>
+              <Link to="/about/" className="mt-5 inline-block text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">More about my approach &rarr;</Link>
+            </div>
+            <div>
+              <p className="prose-body max-w-2xl">My approach connects research, content, technical foundations, and consistent execution instead of treating every channel as a separate task.</p>
+              <ol className="mt-7 grid gap-5 border-t border-border pt-5 sm:grid-cols-2 lg:grid-cols-5">
+                {[
+                  ["01", "Understand", "Learn about the business, audience, goals, and existing presence."],
+                  ["02", "Research", "Review search intent, competitors, content gaps, and opportunities."],
+                  ["03", "Plan", "Prioritise actions according to impact, effort, and resources."],
+                  ["04", "Execute", "Implement agreed SEO, content, and marketing activities."],
+                  ["05", "Review", "Measure available data and refine the approach."],
+                ].map(([number, title, description]) => (
+                  <li key={number}>
+                    <p className="text-xs font-semibold text-ink">{number}</p>
+                    <h3 className="mt-2 text-sm">{title}</h3>
+                    <p className="prose-body mt-2 text-sm">{description}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </section>
+
         {/* FINAL CTA */}
         <section className="bg-foreground px-6 py-14 text-background md:px-10 md:py-20">
           <div className="wrap grid items-center gap-8 md:grid-cols-[1fr_1fr_auto]">
@@ -373,14 +404,14 @@ const Home = () => {
                 I&rsquo;ll take a look and get back to you.
               </p>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="mt-6 inline-block bg-background px-6 py-3.5 text-sm font-semibold text-foreground transition-opacity hover:opacity-85"
               >
                 Let&rsquo;s Talk &rarr;
               </Link>
             </div>
             <img
-              src={searchToOpportunity}
+              src="/images/truereech-ideas-content-growth-illustration.png"
               alt="Handwritten editorial note reading Ideas, Content, Growth"
               width={384}
               height={320}

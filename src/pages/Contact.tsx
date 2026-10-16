@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import { SITE_URL, SOCIALS } from "@/lib/site";
+import { SITE_URL, SOCIALS, PHONE_NUMBER } from "@/lib/site";
 
 const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
 
@@ -44,24 +44,24 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contact Manisha | TrueReech</title>
+        <title>Contact Manisha — Freelance SEO and Digital Marketing | TrueReech</title>
         <meta
           name="description"
-          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
+          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
         />
-        <link rel="canonical" href={`${SITE_URL}/contact`} />
-        <meta property="og:title" content="Contact Manisha | TrueReech" />
+        <link rel="canonical" href={`${SITE_URL}/contact/`} />
+        <meta property="og:title" content="Contact Manisha — Freelance SEO and Digital Marketing | TrueReech" />
         <meta
           property="og:description"
-          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
+          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
         />
-        <meta property="og:url" content={`${SITE_URL}/contact`} />
+        <meta property="og:url" content={`${SITE_URL}/contact/`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Manisha | TrueReech" />
+        <meta name="twitter:title" content="Contact Manisha — Freelance SEO and Digital Marketing | TrueReech" />
         <meta
           name="twitter:description"
-          content="Tell me about your business and what you'd like help with — search visibility, content, website copy, social media or ad creatives."
+          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
         />
       </Helmet>
 
@@ -70,11 +70,15 @@ const Contact = () => {
       <main className="px-6 py-16 md:px-10 md:py-24">
         <div className="wrap grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <h1 className="text-[2.25rem] leading-[1.08] md:text-5xl">Let&rsquo;s Talk.</h1>
+            <h1 className="text-[2.25rem] leading-[1.08] md:text-5xl">Tell me what you&rsquo;re working on.</h1>
             <p className="prose-body mt-6 max-w-md">
-              Tell me a little about your business, what you&rsquo;re trying to improve and what you&rsquo;d like help
-              with.
+              Whether you need help with SEO, content, AI search visibility, or a clearer digital marketing direction,
+              share a little about your project. I&rsquo;ll review the details and we can discuss the next steps.
             </p>
+            <div className="mt-8 border-t border-border pt-6 text-sm">
+              <p className="font-semibold">Phone</p>
+              <a href={`tel:${PHONE_NUMBER}`} className="mt-2 inline-block text-ink underline decoration-1 underline-offset-4">+91 8762845114</a>
+            </div>
             <div className="mt-10 border-t border-border pt-6">
               <p className="text-sm font-semibold">Find me elsewhere</p>
               <div className="mt-4 flex flex-col gap-3 text-sm">
@@ -84,7 +88,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="w-fit text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  LinkedIn;
+                  LinkedIn &nearr;
                 </a>
                 <a
                   href={SOCIALS.bluesky}
@@ -92,7 +96,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="w-fit text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  Bluesky;
+                  Bluesky &nearr;
                 </a>
               </div>
             </div>
