@@ -44,24 +44,28 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contact Manisha — Freelance SEO and Digital Marketing | TrueReech</title>
+        <title>Contact TrueReech | SEO &amp; Content Marketing</title>
         <meta
           name="description"
-          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
+          content="Looking for SEO content, blog writing, or AI search visibility support? Contact TrueReech to discuss your website and content marketing goals."
         />
         <link rel="canonical" href={`${SITE_URL}/contact/`} />
-        <meta property="og:title" content="Contact Manisha — Freelance SEO and Digital Marketing | TrueReech" />
+        <meta property="og:site_name" content="TrueReech" />
+        <meta property="og:title" content="Contact TrueReech | SEO & Content Marketing" />
         <meta
           property="og:description"
-          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
+          content="Looking for SEO content, blog writing, or AI search visibility support? Contact TrueReech to discuss your website and content marketing goals."
         />
         <meta property="og:url" content={`${SITE_URL}/contact/`} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${SITE_URL}/images/truereech-ideas-content-growth-illustration.png`} />
+        <meta property="og:image:alt" content="TrueReech Ideas Content Growth illustration" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Manisha — Freelance SEO and Digital Marketing | TrueReech" />
+        <meta name="twitter:image" content={`${SITE_URL}/images/truereech-ideas-content-growth-illustration.png`} />
+        <meta name="twitter:title" content="Contact TrueReech | SEO & Content Marketing" />
         <meta
           name="twitter:description"
-          content="Tell me what you're working on. Manisha can help with SEO, content, AI search visibility, or a clearer digital marketing direction."
+          content="Looking for SEO content, blog writing, or AI search visibility support? Contact TrueReech to discuss your website and content marketing goals."
         />
       </Helmet>
 

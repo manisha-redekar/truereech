@@ -8,13 +8,20 @@ import { projects } from "@/lib/content";
 const Work = () => (
   <div className="min-h-screen">
     <Helmet>
-      <title>Selected Work and Marketing Projects | TrueReech</title>
-      <meta name="description" content="A selection of genuine SEO, content, website, social media, and community-led marketing work by Manisha at TrueReech." />
+      <title>SEO Portfolio &amp; Content Projects | TrueReech</title>
+      <meta name="description" content="Explore selected SEO, content marketing, blog writing, and community growth projects, with client identities kept confidential where required." />
       <link rel="canonical" href={`${SITE_URL}/work/`} />
-      <meta property="og:title" content="Selected Work and Marketing Projects | TrueReech" />
-      <meta property="og:description" content="A selection of genuine SEO, content, website, social media, and community-led marketing work by Manisha at TrueReech." />
+      <meta property="og:site_name" content="TrueReech" />
+      <meta property="og:title" content="SEO Portfolio & Content Projects | TrueReech" />
+      <meta property="og:description" content="Explore selected SEO, content marketing, blog writing, and community growth projects, with client identities kept confidential where required." />
       <meta property="og:url" content={`${SITE_URL}/work/`} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
+      <meta property="og:image:alt" content="TrueReech digital marketing illustration" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="SEO Portfolio & Content Projects | TrueReech" />
+      <meta name="twitter:description" content="Explore selected SEO, content marketing, blog writing, and community growth projects, with client identities kept confidential where required." />
+      <meta name="twitter:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
     </Helmet>
     <SiteHeader />
     <main>

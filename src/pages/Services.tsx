@@ -8,13 +8,20 @@ import { services } from "@/lib/content";
 const Services = () => (
   <div className="min-h-screen">
     <Helmet>
-      <title>Freelance SEO and Digital Marketing Services | TrueReech</title>
-      <meta name="description" content="Freelance SEO, content strategy, AI search visibility, website content, and social media support from Manisha at TrueReech." />
+      <title>SEO &amp; Content Marketing Services | TrueReech</title>
+      <meta name="description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <link rel="canonical" href={`${SITE_URL}/services/`} />
-      <meta property="og:title" content="Freelance SEO and Digital Marketing Services | TrueReech" />
-      <meta property="og:description" content="Freelance SEO, content strategy, AI search visibility, website content, and social media support from Manisha at TrueReech." />
+      <meta property="og:site_name" content="TrueReech" />
+      <meta property="og:title" content="SEO & Content Marketing Services | TrueReech" />
+      <meta property="og:description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <meta property="og:url" content={`${SITE_URL}/services/`} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={`${SITE_URL}/images/truereech-search-opportunities-illustration.png`} />
+      <meta property="og:image:alt" content="TrueReech search opportunities illustration" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="SEO & Content Marketing Services | TrueReech" />
+      <meta name="twitter:description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
+      <meta name="twitter:image" content={`${SITE_URL}/images/truereech-search-opportunities-illustration.png`} />
     </Helmet>
     <SiteHeader />
     <main>

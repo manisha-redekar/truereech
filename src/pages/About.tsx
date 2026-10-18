@@ -8,13 +8,20 @@ import strategyImage from "@/assets/strategy-mono.jpg.asset.json";
 const About = () => (
   <div className="min-h-screen">
     <Helmet>
-      <title>About Manisha — Independent Freelance Marketer | TrueReech</title>
-      <meta name="description" content="Learn about Manisha, the independent freelancer behind TrueReech, focused on SEO, content, AI search visibility, and digital marketing execution." />
+      <title>About Manisha Redekar | TrueReech Freelancer</title>
+      <meta name="description" content="Meet Manisha Redekar, an independent digital marketing freelancer focused on SEO strategy, content creation, organic growth, and AI search visibility." />
       <link rel="canonical" href={`${SITE_URL}/about/`} />
-      <meta property="og:title" content="About Manisha — Independent Freelance Marketer | TrueReech" />
-      <meta property="og:description" content="Learn about Manisha, the independent freelancer behind TrueReech, focused on SEO, content, AI search visibility, and digital marketing execution." />
+      <meta property="og:site_name" content="TrueReech" />
+      <meta property="og:title" content="About Manisha Redekar | TrueReech Freelancer" />
+      <meta property="og:description" content="Meet Manisha Redekar, an independent digital marketing freelancer focused on SEO strategy, content creation, organic growth, and AI search visibility." />
       <meta property="og:url" content={`${SITE_URL}/about/`} />
       <meta property="og:type" content="profile" />
+      <meta property="og:image" content={`${SITE_URL}/images/truereech-about-illustration.png`} />
+      <meta property="og:image:alt" content="TrueReech illustration of practical strategies and useful content" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="About Manisha Redekar | TrueReech Freelancer" />
+      <meta name="twitter:description" content="Meet Manisha Redekar, an independent digital marketing freelancer focused on SEO strategy, content creation, organic growth, and AI search visibility." />
+      <meta name="twitter:image" content={`${SITE_URL}/images/truereech-about-illustration.png`} />
     </Helmet>
     <SiteHeader />
     <main>

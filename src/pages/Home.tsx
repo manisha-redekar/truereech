@@ -29,12 +29,22 @@ const projectWordmarks: Record<string, string> = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Manisha",
-  jobTitle: "Independent digital visibility and content freelancer",
+  "@id": `${SITE_URL}/#manisha-redekar`,
+  name: "Manisha Redekar",
+  jobTitle: "Independent freelance digital marketer",
   url: SITE_URL,
-  brand: { "@type": "Brand", name: "TrueReech" },
   sameAs: [SOCIALS.linkedin, SOCIALS.bluesky],
-  address: { "@type": "PostalAddress", addressCountry: "IN" },
+  worksFor: { "@type": "Brand", name: "TrueReech", url: SITE_URL },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: "TrueReech",
+  url: SITE_URL,
+  description: "SEO, content marketing, and AI search visibility services from independent freelancer Manisha Redekar.",
+  publisher: { "@id": `${SITE_URL}/#manisha-redekar` },
 };
 
 const LinkedInIcon = () => (
@@ -75,19 +85,28 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Manisha — Digital Visibility, Content &amp; Search | TrueReech</title>
+        <title>TrueReech | SEO, Content Marketing &amp; AI Search</title>
         <meta
           name="description"
-          content="Manisha helps businesses become easier to find, understand and trust online through search visibility, useful content, websites and social media."
+          content="Improve online visibility with SEO content, blog writing, content marketing, and AI search visibility services from TrueReech."
         />
         <link rel="canonical" href={`${SITE_URL}/`} />
-        <meta property="og:title" content="Manisha — Digital Visibility, Content & Search | TrueReech" />
+        <meta property="og:site_name" content="TrueReech" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
+        <meta property="og:image:alt" content="TrueReech freelance digital marketing illustration" />
+        <meta property="og:title" content="TrueReech | SEO, Content Marketing & AI Search" />
         <meta
           property="og:description"
-          content="Manisha helps businesses become easier to find, understand and trust online through search visibility, useful content, websites and social media."
+          content="Improve online visibility with SEO content, blog writing, content marketing, and AI search visibility services from TrueReech."
         />
         <meta property="og:url" content={`${SITE_URL}/`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TrueReech | SEO, Content Marketing & AI Search" />
+        <meta name="twitter:description" content="Improve online visibility with SEO content, blog writing, content marketing, and AI search visibility services from TrueReech." />
+        <meta name="twitter:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
 
       <SiteHeader />
