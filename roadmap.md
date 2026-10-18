@@ -1,0 +1,4 @@
+- [ ] Enlarge wordmarks and remove byline.
+- [ ] Replace current illustrations with relevant licensed web images at existing sizes.
+- [ ] Slightly blur company names and add Joshi Institute to both work listings.
+- [ ] Verify images, work listings, and layout.
