@@ -30,9 +30,9 @@ const Work = () => (
           {projects.map((project) => (
             <article key={project.name} className="flex min-h-[240px] flex-col rounded-lg border border-border bg-card p-6 shadow-[0_4px_18px_rgba(30,30,30,0.05)]">
               <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink">{project.category}</p>
-              <h2 className="mt-3 text-xl">{project.name}</h2>
+              <h2 className="client-name mt-3 text-xl">{project.name}</h2>
               <p className="prose-body mt-3 text-sm">{project.desc}</p>
-              <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-auto pt-6 text-sm font-semibold text-ink hover:text-foreground">Visit project &rarr;</a>
+              {project.url && <a href={project.url} target="_blank" rel="noopener noreferrer" className="mt-auto pt-6 text-sm font-semibold text-ink hover:text-foreground">Visit project &rarr;</a>}
             </article>
           ))}
         </div>
