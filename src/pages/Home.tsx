@@ -5,10 +5,11 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, SOCIALS } from "@/lib/site";
 import { projects } from "@/lib/content";
-import heroImage from "@/assets/hero-mono.jpg.asset.json";
-import strategyImage from "@/assets/strategy-mono.jpg.asset.json";
-import contentImage from "@/assets/content-mono.jpg.asset.json";
-import ideasImage from "@/assets/ideas-mono.jpg.asset.json";
+import heroImage from "@/assets/hero-workspace.png";
+import strategyImage from "@/assets/about-trio.png";
+import contentImage from "@/assets/search-to-opportunity.png";
+
+const ideasImage = "/images/truereech-ideas-content-growth-illustration.png";
 
 const helpWith = [
   { title: "Search Engine Optimisation (SEO)", note: "Clearer technical and on-page foundations for organic visibility." },
@@ -143,7 +144,7 @@ const Home = () => {
 
             <div className="relative">
               <img
-                src={heroImage.url}
+                src={heroImage}
                 alt="Workspace with a laptop and notebook for research and content planning"
                 width={1024}
                 height={832}
@@ -174,7 +175,7 @@ const Home = () => {
 
             <div className="lg:border-l lg:border-border lg:pl-10">
               <img
-                src={strategyImage.url}
+                src={strategyImage}
                 alt="Content strategy planner beside a keyboard"
                 width={1152}
                 height={576}
@@ -198,7 +199,7 @@ const Home = () => {
               <Link to="/services/" className="mt-4 inline-block text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">See all services &rarr;</Link>
               <div className="mt-8">
                 <img
-                  src={contentImage.url}
+                  src={contentImage}
                   alt="Writing content in a notebook beside a laptop"
                   width={1024}
                   height={768}
@@ -345,7 +346,7 @@ const Home = () => {
               </Link>
             </div>
             <img
-              src={ideasImage.url}
+              src={ideasImage}
               alt="Laptop and notebook used for content creation"
               width={384}
               height={320}
