@@ -72,9 +72,10 @@ export const services: Service[] = [
   },
 ];
 
-export type Project = { name: string; category: string; desc: string; url: string };
+export type Project = { name: string; category: string; desc: string; url?: string };
 
 export const projects: Project[] = [
+  { name: "Joshi Institute", category: "Content & Social Media", desc: "Content, social media content, Google Business Profile work, ad scripts, and ad creatives." },
   { name: "Feedspace", category: "SEO & Content", desc: "Helped take Domain Rating from 24 to 63 over approximately 1.5 years. 50+ blogs and 30+ case studies were part of the wider content work.", url: "https://www.feedspace.io/" },
   { name: "Halo", category: "SEO Content", desc: "64 blogs and 20+ website pages.", url: "https://halo.co.in/" },
   { name: "DevTown", category: "YouTube & Content", desc: "Created scripts for daily live bootcamps for approximately 2.5 years. 432K+ YouTube followers.", url: "https://www.devtown.in/" },

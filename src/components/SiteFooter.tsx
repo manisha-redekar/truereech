@@ -5,8 +5,7 @@ const SiteFooter = () => (
   <footer className="border-t border-border px-6 py-10 md:px-10">
     <div className="wrap flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
       <div>
-        <p className="text-[13px] font-extrabold uppercase tracking-[0.22em]">TrueReech</p>
-        <p className="mt-1 text-[11px] text-muted-foreground">by Manisha</p>
+        <p className="text-xl font-extrabold uppercase tracking-normal md:text-2xl">TrueReech</p>
         <p className="mt-3 text-sm text-muted-foreground">Digital visibility &bull; Content &bull; Search</p>
       </div>
 

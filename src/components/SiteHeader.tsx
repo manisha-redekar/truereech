@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const links = [
   { label: "Home", to: "/" },
@@ -22,10 +23,10 @@ const SiteHeader = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
+      <Helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" /></Helmet>
       <div className="wrap flex items-center justify-between px-6 py-4 md:px-10">
         <Link to="/" className="leading-none" onClick={() => setOpen(false)}>
-          <span className="block text-[13px] font-extrabold uppercase tracking-[0.22em]">TrueReech</span>
-          <span className="mt-1 block text-[11px] text-muted-foreground">by Manisha</span>
+          <span className="block text-xl font-extrabold uppercase tracking-normal md:text-2xl">TrueReech</span>
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-6 md:flex">
