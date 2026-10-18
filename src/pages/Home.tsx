@@ -4,6 +4,11 @@ import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, SOCIALS } from "@/lib/site";
+import { projects } from "@/lib/content";
+import heroImage from "@/assets/hero-mono.jpg.asset.json";
+import strategyImage from "@/assets/strategy-mono.jpg.asset.json";
+import contentImage from "@/assets/content-mono.jpg.asset.json";
+import ideasImage from "@/assets/ideas-mono.jpg.asset.json";
 
 const helpWith = [
   { title: "Search Engine Optimisation (SEO)", note: "Clearer technical and on-page foundations for organic visibility." },
@@ -14,102 +19,12 @@ const helpWith = [
   { title: "Social media content and management", note: "Relevant content aligned with the business, audience, and agreed scope." },
 ]
 
-type Project = { name: string; category: string; desc: string; url: string };
-
 const projectWordmarks: Record<string, string> = {
   Feedspace: "feedspace",
   Halo: "halo",
   DevTown: "devtown",
   Settel: "settel",
 };
-
-const projects: Project[] = [
-  {
-    name: "Feedspace",
-    category: "SEO & Content",
-    desc: "Helped take Domain Rating from 24 to 63 over approximately 1.5 years. 50+ blogs and 30+ case studies were part of the wider content work.",
-    url: "https://www.feedspace.io/",
-  },
-  { name: "Halo", category: "SEO Content", desc: "64 blogs and 20+ website pages.", url: "https://halo.co.in/" },
-  {
-    name: "DevTown",
-    category: "YouTube & Content",
-    desc: "Created scripts for daily live bootcamps for approximately 2.5 years. 432K+ YouTube followers.",
-    url: "https://www.devtown.in/",
-  },
-  {
-    name: "Settel",
-    category: "Community & Growth",
-    desc: "Helped acquire the first 100 users through Reddit/community-led content.",
-    url: "https://www.settel.io/",
-  },
-  {
-    name: "DT7 Agency",
-    category: "SEO & Content",
-    desc: "Content work for a marketing agency serving businesses in Andhra Pradesh.",
-    url: "https://dt7.agency/",
-  },
-  {
-    name: "ECE Project Kart",
-    category: "SEO & Content",
-    desc: "Created 40+ SEO blogs for a final-year project business.",
-    url: "https://eceprojectkart.com/",
-  },
-  {
-    name: "Tufftron",
-    category: "SEO & Content",
-    desc: "Blog and content work for a glass manufacturing business.",
-    url: "https://tufftron.com/",
-  },
-  {
-    name: "Omega Hospitals",
-    category: "Social Media",
-    desc: "Telugu + English focused social media content.",
-    url: "https://www.instagram.com/omega.hospitals",
-  },
-  {
-    name: "Jegabuilds",
-    category: "Social Media",
-    desc: "Social media and competition-focused content.",
-    url: "https://www.instagram.com/jegabuilds",
-  },
-  {
-    name: "Dr Varun, Gastroenterologist",
-    category: "Social Media",
-    desc: "Regular healthcare awareness content.",
-    url: "https://www.instagram.com/dr.varun_gastroenterologist",
-  },
-  {
-    name: "Durga Dairy",
-    category: "Social Media",
-    desc: "Regular social media content for the brand.",
-    url: "https://www.instagram.com/durgadairy_official",
-  },
-  {
-    name: "Falcon Reality",
-    category: "Course Content",
-    desc: "Created a 5-module HR course script for an AI automation company based in the Netherlands.",
-    url: "https://www.falconreality.in/",
-  },
-  {
-    name: "Connectstore",
-    category: "Community & Growth",
-    desc: "Competition-focused content for a creator/influencer CRM product.",
-    url: "https://connectstore.in/",
-  },
-  {
-    name: "Sai Bhaskar Hospital",
-    category: "Content",
-    desc: "Website and blog content work.",
-    url: "https://saibhaskarhospital.com/",
-  },
-  {
-    name: "Anumy Baby",
-    category: "Content",
-    desc: "Content work for a pregnancy-focused hospital brand.",
-    url: "https://anumybaby.com/",
-  },
-];
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -209,8 +124,8 @@ const Home = () => {
 
             <div className="relative">
               <img
-                src="/images/truereech-hero-illustration.png"
-                alt="Editorial illustration of a woman working at a laptop beside a search interface, books and a plant"
+                src={heroImage.url}
+                alt="Workspace with a laptop and notebook for research and content planning"
                 width={1024}
                 height={832}
                 className="mx-auto h-auto w-full max-w-[520px]"
@@ -240,8 +155,8 @@ const Home = () => {
 
             <div className="lg:border-l lg:border-border lg:pl-10">
               <img
-                src="/images/truereech-about-illustration.png"
-                alt="Editorial illustration of practical strategies, useful content and real opportunities"
+                src={strategyImage.url}
+                alt="Content strategy planner beside a keyboard"
                 width={1152}
                 height={576}
                 loading="lazy"
@@ -264,8 +179,8 @@ const Home = () => {
               <Link to="/services/" className="mt-4 inline-block text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">See all services &rarr;</Link>
               <div className="mt-8">
                 <img
-                  src="/images/truereech-search-opportunities-illustration.png"
-                  alt="Editorial illustration of a search results page turning into real opportunities"
+                  src={contentImage.url}
+                  alt="Writing content in a notebook beside a laptop"
                   width={1024}
                   height={768}
                   loading="lazy"
@@ -330,7 +245,7 @@ const Home = () => {
                   key={p.name}
                   className="flex min-h-[190px] w-[78%] shrink-0 snap-start flex-col rounded-lg border border-border bg-card p-5 shadow-[0_4px_18px_rgba(30,30,30,0.05)] sm:w-[46%] lg:w-[calc((100%-3.75rem)/4)]"
                 >
-                  <div className="flex min-h-7 items-center gap-2.5">
+                  <div className="client-name flex min-h-7 items-center gap-2.5">
                     <span className="flex h-7 w-7 items-center justify-center rounded-full border border-ink/30 text-[11px] font-bold text-ink" aria-hidden="true">
                       {p.name.charAt(0)}
                     </span>
@@ -340,14 +255,14 @@ const Home = () => {
                   </div>
                   <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink">{p.category}</p>
                   <p className="prose-body mt-2 text-[14px]">{p.desc}</p>
-                  <a
+                  {p.url && <a
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-auto pt-4 text-sm text-muted-foreground transition-colors hover:text-foreground"
                   >
                     Visit site &rarr;
-                  </a>
+                  </a>}
                 </li>
               ))}
             </ul>
@@ -411,8 +326,8 @@ const Home = () => {
               </Link>
             </div>
             <img
-              src="/images/truereech-ideas-content-growth-illustration.png"
-              alt="Handwritten editorial note reading Ideas, Content, Growth"
+              src={ideasImage.url}
+              alt="Laptop and notebook used for content creation"
               width={384}
               height={320}
               loading="lazy"
