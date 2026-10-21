@@ -5,9 +5,9 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, SOCIALS } from "@/lib/site";
 import { projects } from "@/lib/content";
-import heroImage from "@/assets/hero-mono.jpg.asset.json";
-import strategyImage from "@/assets/strategy-mono.jpg.asset.json";
-import contentImage from "@/assets/content-mono.jpg.asset.json";
+import heroImage from "@/assets/hero-mono.jpg";
+import strategyImage from "@/assets/strategy-mono.jpg";
+import contentImage from "@/assets/content-mono.jpg";
 import ideasImage from "@/assets/ideas-mono.jpg.asset.json";
 
 const helpWith = [
@@ -93,7 +93,7 @@ const Home = () => {
         <link rel="canonical" href={`${SITE_URL}/`} />
         <meta property="og:site_name" content="TrueReech" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={`${SITE_URL}${heroImage.url}`} />
+        <meta property="og:image" content={`${SITE_URL}${heroImage}`} />
         <meta property="og:image:alt" content="TrueReech freelance digital marketing illustration" />
         <meta property="og:title" content="TrueReech | SEO, Content Marketing & AI Search" />
         <meta
@@ -104,7 +104,7 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="TrueReech | SEO, Content Marketing & AI Search" />
         <meta name="twitter:description" content="Improve online visibility with SEO content, blog writing, content marketing, and AI search visibility services from TrueReech." />
-        <meta name="twitter:image" content={`${SITE_URL}${heroImage.url}`} />
+        <meta name="twitter:image" content={`${SITE_URL}${heroImage}`} />
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
@@ -143,7 +143,7 @@ const Home = () => {
 
             <div className="relative">
               <img
-                src={heroImage.url}
+                src={heroImage}
                 alt="Workspace with a laptop and notebook for research and content planning"
                 width={1024}
                 height={832}
@@ -174,7 +174,7 @@ const Home = () => {
 
             <div className="lg:border-l lg:border-border lg:pl-10">
               <img
-                src={strategyImage.url}
+                src={strategyImage}
                 alt="Content strategy planner beside a keyboard"
                 width={1152}
                 height={576}
@@ -198,7 +198,7 @@ const Home = () => {
               <Link to="/services/" className="mt-4 inline-block text-sm font-semibold text-ink underline decoration-1 underline-offset-4 hover:text-foreground">See all services &rarr;</Link>
               <div className="mt-8">
                 <img
-                  src={contentImage.url}
+                  src={contentImage}
                   alt="Writing content in a notebook beside a laptop"
                   width={1024}
                   height={768}
