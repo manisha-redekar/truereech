@@ -8,7 +8,6 @@ import { projects } from "@/lib/content";
 import heroImage from "@/assets/hero-mono.jpg";
 import strategyImage from "@/assets/strategy-mono.jpg";
 import contentImage from "@/assets/content-mono.jpg";
-import ideasImage from "@/assets/ideas-mono.jpg.asset.json";
 
 const helpWith = [
   { title: "Search Engine Optimisation (SEO)", note: "Clearer technical and on-page foundations for organic visibility." },
@@ -344,14 +343,6 @@ const Home = () => {
                 Let&rsquo;s Talk &rarr;
               </Link>
             </div>
-            <img
-              src={ideasImage.url}
-              alt="Laptop and notebook used for content creation"
-              width={384}
-              height={320}
-              loading="lazy"
-              className="h-auto w-full max-w-[150px] justify-self-end md:max-w-[170px]"
-            />
           </div>
         </section>
       </main>
