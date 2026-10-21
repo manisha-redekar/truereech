@@ -38,7 +38,7 @@ const Blog = () => (
           </p>
  <div className="prose-body mt-12 max-w-3xl space-y-8">
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">Introduction</h2>
+              <h2 className="text-2xl leading-tight md:text-5xl">Introduction</h2>
               <p> When people want an honest opinion about a product, compare different services, or solve a problem, they often look beyond advertisements. They search for discussions from people who have already experienced the problem.</p>
           
               <p> Reddit is one place where these conversations happen. Its communities cover everything from software and business to travel, skincare, finance, and technology.</p>
