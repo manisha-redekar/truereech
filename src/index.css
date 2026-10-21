@@ -91,3 +91,53 @@
     @apply underline decoration-1 underline-offset-4 transition-colors hover:text-foreground;
   }
 }
+
+/* Blog article typography (only affects elements inside .blog-article) */
+@layer components {
+  .blog-article {
+    @apply text-[16px] leading-[1.85] text-foreground/80 md:text-[17px];
+  }
+  .blog-article section + section {
+    @apply mt-14 border-t border-border pt-12 md:mt-16 md:pt-14;
+  }
+  .blog-article section > :last-child {
+    @apply mb-0;
+  }
+  .blog-article h2 {
+    @apply mb-6 text-2xl leading-tight text-foreground md:text-3xl;
+  }
+  .blog-article h3 {
+    @apply mb-3 mt-10 text-xl leading-snug text-foreground;
+  }
+  .blog-article h2 + h3 {
+    @apply mt-6;
+  }
+  .blog-article p {
+    @apply mb-5;
+  }
+  .blog-article ul {
+    @apply mb-6 space-y-2 marker:text-muted-foreground;
+  }
+  .blog-article li {
+    @apply pl-1;
+  }
+  .blog-article strong {
+    @apply font-semibold text-foreground;
+  }
+  .blog-article a {
+    @apply font-semibold text-foreground underline decoration-1 underline-offset-4;
+  }
+  .blog-article .overflow-x-auto {
+    @apply my-8;
+  }
+  .blog-article table {
+    @apply text-[15px] leading-relaxed;
+  }
+  .blog-article th,
+  .blog-article td {
+    @apply px-4 py-3.5;
+  }
+  .blog-article thead tr {
+    @apply bg-surface;
+  }
+}
