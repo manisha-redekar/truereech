@@ -40,10 +40,10 @@ const Blog = () => (
           <div className="prose-body mt-12 max-w-3xl space-y-8">
             <section>
               <h2 className="text-2xl leading-tight md:text-3xl">Introduction</h2>
-              <p className="mb-4"> When people want an honest opinion about a product, compare different services, or solve a problem, they often look beyond advertisements. They search for discussions from people who have already experienced the problem.</p>
+              <p> When people want an honest opinion about a product, compare different services, or solve a problem, they often look beyond advertisements. They search for discussions from people who have already experienced the problem.</p>
           
-              <p className="mb-4"> Reddit is one place where these conversations happen. Its communities cover everything from software and business to travel, skincare, finance, and technology.</p>
-              <p className="mb-4"> For businesses, these discussions can reveal what potential customers are asking, what frustrates them, and what they consider before making a purchase.</p>
+              <p> Reddit is one place where these conversations happen. Its communities cover everything from software and business to travel, skincare, finance, and technology.</p>
+              <p> For businesses, these discussions can reveal what potential customers are asking, what frustrates them, and what they consider before making a purchase.</p>
               <p>However, Reddit marketing is not simply about posting links to your website. Every community has its own rules, and people may react negatively to content that feels like an advertisement disguised as a helpful answer.</p>
               <p>This is where <strong>Reddit marketing services</strong> can help. A thoughtful strategy involves researching relevant communities, understanding customer questions, contributing useful information, and measuring results where possible.</p>
               <p>In this guide, you will learn how Reddit marketing works, what a service may include, how businesses can use it, and what to consider before hiring a Reddit marketing freelancer or consultant.</p>
