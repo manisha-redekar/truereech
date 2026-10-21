@@ -29,7 +29,7 @@ const Services = () => (
       <section className="px-6 pb-16 pt-16 md:px-10 md:pb-20 md:pt-24">
         <div className="wrap max-w-4xl">
           <p className="eyebrow">Services</p>
-          <h1 className="mt-5 max-w-3xl text-[2.7rem] leading-[1.03] md:text-6xl">Freelance SEO and digital marketing services.</h1>
+          <h1 className="mt-5 max-w-3xl text-[2.7rem] leading-[1.03] md:text-6xl">SEO, AEO, GEO and digital marketing services.</h1>
           <p className="prose-body mt-7 max-w-2xl text-lg">I work with businesses that want clearer messaging, stronger search visibility, useful content, and a more consistent digital presence. Services can be scoped individually or combined into a practical plan.</p>
         </div>
       </section>
