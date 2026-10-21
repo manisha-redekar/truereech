@@ -20,7 +20,7 @@ const Services = () => (
       <meta property="og:image" content={`${SITE_URL}${contentImage}`} />
       <meta property="og:image:alt" content="Writing content in a notebook beside a laptop" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="SEO & Content Marketing Services | TrueReech" />
+      <meta name="twitter:title" content="SEO, AEO, GEO and Marketing Services | TrueReech" />
       <meta name="twitter:description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <meta name="twitter:image" content={`${SITE_URL}${contentImage}`} />
     </Helmet>
