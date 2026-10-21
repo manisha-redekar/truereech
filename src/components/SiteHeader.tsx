@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 const links = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services/" },
+  { label: "Blog", to: "/blog/reddit-marketing-services/" },
   { label: "Work", to: "/work/" },
   { label: "About", to: "/about/" },
   { label: "Contact", to: "/contact/" },
