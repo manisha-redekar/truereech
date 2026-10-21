@@ -13,7 +13,7 @@ const Services = () => (
       <meta name="description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <link rel="canonical" href={`${SITE_URL}/services/`} />
       <meta property="og:site_name" content="TrueReech" />
-      <meta property="og:title" content="SEO & Content Marketing Services | TrueReech" />
+      <meta property="og:title" content="SEO, AEO, GEO and Marketing Services | TrueReech" />
       <meta property="og:description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <meta property="og:url" content={`${SITE_URL}/services/`} />
       <meta property="og:type" content="website" />
