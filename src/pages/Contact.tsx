@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, SOCIALS, PHONE_NUMBER } from "@/lib/site";
+import ideasImage from "@/assets/ideas-mono.jpg.asset.json";
 
 const FORMSPREE_URL = "https://formspree.io/f/meerkwjd";
 
@@ -58,10 +59,10 @@ const Contact = () => {
         />
         <meta property="og:url" content={`${SITE_URL}/contact/`} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={`${SITE_URL}/images/truereech-ideas-content-growth-illustration.png`} />
-        <meta property="og:image:alt" content="TrueReech Ideas Content Growth illustration" />
+        <meta property="og:image" content={`${SITE_URL}${ideasImage.url}`} />
+        <meta property="og:image:alt" content="Laptop and notebook used for content creation" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={`${SITE_URL}/images/truereech-ideas-content-growth-illustration.png`} />
+        <meta name="twitter:image" content={`${SITE_URL}${ideasImage.url}`} />
         <meta name="twitter:title" content="Contact TrueReech | SEO & Content Marketing" />
         <meta
           name="twitter:description"

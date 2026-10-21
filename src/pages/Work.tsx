@@ -4,6 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/site";
 import { projects } from "@/lib/content";
+import heroImage from "@/assets/hero-mono.jpg.asset.json";
 
 const Work = () => (
   <div className="min-h-screen">
@@ -16,12 +17,12 @@ const Work = () => (
       <meta property="og:description" content="Explore selected SEO, content marketing, blog writing, and community growth projects, with client identities kept confidential where required." />
       <meta property="og:url" content={`${SITE_URL}/work/`} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
-      <meta property="og:image:alt" content="TrueReech digital marketing illustration" />
+      <meta property="og:image" content={`${SITE_URL}${heroImage.url}`} />
+      <meta property="og:image:alt" content="Workspace with a laptop and notebook for research and content planning" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="SEO Portfolio & Content Projects | TrueReech" />
       <meta name="twitter:description" content="Explore selected SEO, content marketing, blog writing, and community growth projects, with client identities kept confidential where required." />
-      <meta name="twitter:image" content={`${SITE_URL}/images/truereech-hero-illustration.png`} />
+      <meta name="twitter:image" content={`${SITE_URL}${heroImage.url}`} />
     </Helmet>
     <SiteHeader />
     <main>
