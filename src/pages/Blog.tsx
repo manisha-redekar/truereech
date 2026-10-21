@@ -36,9 +36,9 @@ const Blog = () => (
           <p className="prose-body mt-7 max-w-2xl text-lg">
             Discover how Reddit marketing services help businesses research communities, engage relevant audiences, answer customer questions and measure results.
           </p>
- <div className="prose-body mt-12 max-w-3xl space-y-8">
+ <div className="blog-article mt-12 max-w-3xl">
             <section>
-              <h2 className="text-2xl leading-tight md:text-5xl">Introduction</h2>
+              <h2 className="text-2xl leading-tight md:text-3xl">Introduction</h2>
               <p> When people want an honest opinion about a product, compare different services, or solve a problem, they often look beyond advertisements. They search for discussions from people who have already experienced the problem.</p>
           
               <p> Reddit is one place where these conversations happen. Its communities cover everything from software and business to travel, skincare, finance, and technology.</p>
@@ -70,7 +70,7 @@ const Blog = () => (
               <p>Traditional marketing often begins with assumptions about what customers need. Reddit discussions can provide another source of information.</p>
               <p>People may explain why they dislike a product, what features they wish existed, which alternatives they are considering, or what prevents them from making a purchase.</p>
               <p>Businesses can use these observations to identify:</p>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>Common customer questions.</li>
                 <li>Problems that existing solutions do not address.</li>
                 <li>Features or benefits customers value.</li>
@@ -103,7 +103,7 @@ const Blog = () => (
               <h3 className="text-xl">1. Subreddit and Audience Research</h3>
               <p>The first step is identifying communities where relevant audiences discuss related topics.</p>
               <p>Research may examine:</p>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>The community&rsquo;s subject and intended audience.</li>
                 <li>Recent discussions and recurring questions.</li>
                 <li>Posting activity and engagement patterns.</li>
@@ -122,7 +122,7 @@ const Blog = () => (
               <h3 className="text-xl">3. Monitoring and Reporting</h3>
               <p>Monitoring helps businesses understand the conversations surrounding their industry, products, or services.</p>
               <p>Depending on the agreed scope, reporting may include:</p>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>Relevant discussions identified.</li>
                 <li>Contributions published.</li>
                 <li>Engagement with those contributions.</li>
@@ -185,7 +185,7 @@ const Blog = () => (
               <p>Costs depend on the amount of research, content planning, engagement, monitoring, reporting, and any paid advertising management required.</p>
               <p>A research-only project will generally involve a different scope from ongoing community engagement and reporting.</p>
               <p>Before hiring a provider, ask for a proposal explaining:</p>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>What work will be completed.</li><li>What deliverables you will receive.</li><li>How often reporting will be provided.</li><li>How performance will be measured.</li><li>Whether advertising spend is separate from service fees.</li><li>What is outside the agreed scope.</li>
               </ul>
               <p>Compare providers based on the quality and relevance of their work, transparency, and realistic expectations not simply the number of posts they promise to publish.</p>
@@ -195,7 +195,7 @@ const Blog = () => (
               <h2 className="text-2xl leading-tight md:text-3xl">How to Choose a Reddit Marketing Freelancer</h2>
               <p>A suitable freelancer should understand Reddit&rsquo;s community culture and be able to explain how their work supports your business objectives.</p>
               <p>Before hiring, ask:</p>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>How will you identify relevant subreddits?</li><li>How will you follow community rules?</li><li>What deliverables will I receive each month?</li><li>How will you measure and report progress?</li><li>How will you respond to negative feedback?</li><li>Which results can be measured, and which cannot be guaranteed?</li>
               </ul>
               <p>Request examples of research, content planning, or reporting where available. Make sure any claimed results are supported by evidence and that the freelancer&rsquo;s role is clearly explained.</p>
@@ -227,7 +227,7 @@ const Blog = () => (
               <p>Visit the <Link to="/services/" className="font-semibold text-ink underline decoration-1 underline-offset-4">TrueReech Services page</Link> to learn more about marketing support, or <Link to="/contact/" className="font-semibold text-ink underline decoration-1 underline-offset-4">contact TrueReech</Link> to discuss your requirements.</p>
 
               <h2 className="pt-2 text-2xl leading-tight md:text-3xl">Official Resources</h2>
-              <ul className="list-disc space-y-1 pl-6">
+              <ul className="list-disc pl-6">
                 <li>Reddit&rsquo;s official Spam guidance</li>
                 <li>Reddit for Business: Advertising options</li>
               </ul>
