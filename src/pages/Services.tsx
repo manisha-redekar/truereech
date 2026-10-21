@@ -67,6 +67,16 @@ const Services = () => (
           </div>
         </div>
       </section>
+      <section className="border-t border-border bg-surface px-6 py-14 md:px-10 md:py-20">
+        <div className="wrap flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
+          <div>
+            <p className="eyebrow">Blogs</p>
+            <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">Practical ideas for better digital visibility.</h2>
+            <p className="prose-body mt-4 max-w-2xl">Read useful guides about content, search, communities, and growing a clearer online presence.</p>
+          </div>
+          <Link to="/blog/reddit-marketing-services/" className="shrink-0 bg-foreground px-6 py-3.5 text-sm font-semibold text-background hover:opacity-85">Read the latest blog &rarr;</Link>
+        </div>
+      </section>
       <section className="bg-foreground px-6 py-14 text-background md:px-10 md:py-20">
         <div className="wrap flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
           <div><p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-background/60">Start with a conversation</p><h2 className="mt-3 text-3xl md:text-4xl">Tell me what you&rsquo;re working on.</h2></div>

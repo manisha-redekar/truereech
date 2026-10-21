@@ -5,6 +5,7 @@ import Contact from "./pages/Contact.tsx";
 import Services from "./pages/Services.tsx";
 import Work from "./pages/Work.tsx";
 import About from "./pages/About.tsx";
+import Blog from "./pages/Blog.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
         <Route path="/work/*" element={<Work />} />
         <Route path="/about/*" element={<About />} />
         <Route path="/contact/*" element={<Contact />} />
+        <Route path="/blog/reddit-marketing-services/*" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
