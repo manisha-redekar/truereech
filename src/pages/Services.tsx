@@ -9,7 +9,7 @@ import contentImage from "@/assets/content-mono.jpg";
 const Services = () => (
   <div className="min-h-screen">
     <Helmet>
-      <title>SEO &amp; Content Marketing Services | TrueReech</title>
+      <title>SEO, AEO, GEO and Marketing Services | TrueReech</title>
       <meta name="description" content="Explore SEO blog writing, website content, content strategy, social media content, and AI search visibility services tailored to your business." />
       <link rel="canonical" href={`${SITE_URL}/services/`} />
       <meta property="og:site_name" content="TrueReech" />
