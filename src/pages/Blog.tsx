@@ -49,7 +49,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">What Is Reddit Marketing?</h2>
+              <h2 className="text-2xl md:text-3xl">What Is Reddit Marketing?</h2>
               <p>Reddit marketing is the process of understanding and engaging with relevant Reddit communities to support business goals.</p>
               <p>Reddit is divided into communities called subreddits. Each subreddit focuses on a particular topic, such as entrepreneurship, digital marketing, software, fitness, or personal finance.</p>
               <p>For example, imagine a company that sells project management software. Instead of immediately advertising its product, the company could research discussions to understand the difficulties people face when managing remote teams.</p>
@@ -65,7 +65,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">Why Do Businesses Need Reddit Marketing Services?</h2>
+              <h2 className="text-2xl md:text-3xl">Why Do Businesses Need Reddit Marketing Services?</h2>
               <h3 className="text-xl">1. To Understand What Potential Customers Really Want</h3>
               <p>Traditional marketing often begins with assumptions about what customers need. Reddit discussions can provide another source of information.</p>
               <p>People may explain why they dislike a product, what features they wish existed, which alternatives they are considering, or what prevents them from making a purchase.</p>
@@ -98,7 +98,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">What Do Reddit Marketing Services Include?</h2>
+              <h2 className="text-2xl md:text-3xl">What Do Reddit Marketing Services Include?</h2>
               <p>The exact scope depends on the business and its goals. A service may include the following activities.</p>
               <h3 className="text-xl">1. Subreddit and Audience Research</h3>
               <p>The first step is identifying communities where relevant audiences discuss related topics.</p>
@@ -134,7 +134,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">What Could a Monthly Reddit Marketing Plan Look Like?</h2>
+              <h2 className="text-2xl md:text-3xl">What Could a Monthly Reddit Marketing Plan Look Like?</h2>
               <p>For example, a business might agree on a monthly plan containing the following deliverables:</p>
               <div className="overflow-x-auto border-y border-border">
                 <table className="w-full min-w-[520px] text-left text-sm">
@@ -155,7 +155,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">How to Build a Reddit Marketing Strategy</h2>
+              <h2 className="text-2xl md:text-3xl">How to Build a Reddit Marketing Strategy</h2>
               <p>Businesses can start with a straightforward process.</p>
               <h3 className="text-xl">Step 1: Define Your Objective</h3>
               <p>Decide what you want Reddit marketing to accomplish.</p>
@@ -180,7 +180,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">How Much Do Reddit Marketing Services Cost?</h2>
+              <h2 className="text-2xl md:text-3xl">How Much Do Reddit Marketing Services Cost?</h2>
               <p>There is no single price for every Reddit marketing project.</p>
               <p>Costs depend on the amount of research, content planning, engagement, monitoring, reporting, and any paid advertising management required.</p>
               <p>A research-only project will generally involve a different scope from ongoing community engagement and reporting.</p>
@@ -192,7 +192,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">How to Choose a Reddit Marketing Freelancer</h2>
+              <h2 className="text-2xl md:text-3xl">How to Choose a Reddit Marketing Freelancer</h2>
               <p>A suitable freelancer should understand Reddit&rsquo;s community culture and be able to explain how their work supports your business objectives.</p>
               <p>Before hiring, ask:</p>
               <ul className="list-disc pl-6">
@@ -204,7 +204,7 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">Frequently Asked Questions</h2>
+              <h2 className="text-2xl md:text-3xl">Frequently Asked Questions</h2>
               <h3 className="text-xl">Is Reddit marketing useful for small businesses?</h3>
               <p>It can be useful when a small business&rsquo;s target audience actively discusses relevant topics on Reddit. Businesses can begin by researching customer questions and community rules before committing to an ongoing service.</p>
               <h3 className="text-xl">Can Reddit marketing help with SEO?</h3>
@@ -219,17 +219,17 @@ const Blog = () => (
             </section>
 
             <section>
-              <h2 className="text-2xl leading-tight md:text-3xl">Make Reddit Marketing Useful for Your Business</h2>
+              <h2 className="text-2xl md:text-3xl">Make Reddit Marketing Useful for Your Business</h2>
               <p>Reddit marketing is not about publishing promotional links everywhere. It is about understanding relevant communities, identifying real customer questions, and contributing information that helps people.</p>
               <p>For businesses, a thoughtful strategy can provide audience insights, support content planning, and create opportunities for relevant engagement. The value depends on the quality of the work, community rules, audience fit, and the results that can actually be measured.</p>
               <p>At TrueReech, the starting point is understanding your business goals and identifying suitable marketing approaches.</p>
               <p><strong>Exploring Reddit marketing for your business?</strong></p>
               <p>Visit the <Link to="/services/" className="font-semibold text-ink underline decoration-1 underline-offset-4">TrueReech Services page</Link> to learn more about marketing support, or <Link to="/contact/" className="font-semibold text-ink underline decoration-1 underline-offset-4">contact TrueReech</Link> to discuss your requirements.</p>
 
-              <h2 className="pt-2 text-2xl leading-tight md:text-3xl">Official Resources</h2>
+              <h2 className="pt-2 text-2xl md:text-3xl">Official Resources</h2>
               <ul className="list-disc pl-6">
-                <li>Reddit&rsquo;s official Spam guidance</li>
-                <li>Reddit for Business: Advertising options</li>
+                <li><a href="https://support.reddithelp.com/hc/en-us/articles/360043504051-Spam" target="_blank" rel="noopener noreferrer">Reddit&rsquo;s official Spam guidance</a></li>
+                <li><a href="https://ads.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit for Business: Advertising options</a></li>
               </ul>
               <p><em>Always review the latest rules of individual subreddits before participating or sharing promotional content.</em></p>
             </section>
