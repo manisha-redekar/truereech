@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import logoAsset from "@/assets/truereech-logo.png.asset.json";
 
 const links = [
   { label: "Home", to: "/" },
