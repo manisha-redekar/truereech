@@ -6,6 +6,7 @@ import Services from "./pages/Services.tsx";
 import Work from "./pages/Work.tsx";
 import About from "./pages/About.tsx";
 import Blog from "./pages/Blog.tsx";
+import BlogIndex from "./pages/BlogIndex.tsx";
 import AeoGeoBlog from "./pages/AeoGeoBlog.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="/work/*" element={<Work />} />
         <Route path="/about/*" element={<About />} />
         <Route path="/contact/*" element={<Contact />} />
+        <Route path="/blog/" element={<BlogIndex />} />
         <Route path="/blog/reddit-marketing-services/*" element={<Blog />} />
         <Route path="/blog/top-aeo-geo-services/*" element={<AeoGeoBlog />} />
         <Route path="*" element={<NotFound />} />
