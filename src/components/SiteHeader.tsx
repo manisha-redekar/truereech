@@ -27,7 +27,8 @@ const SiteHeader = () => {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
       <Helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" /></Helmet>
       <div className="wrap flex items-center justify-between px-6 py-4 md:px-10">
-        <Link to="/" className="leading-none" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-2.5 leading-none" onClick={() => setOpen(false)}>
+          <img src={logoAsset.url} alt="TrueReech logo" className="h-7 w-7 shrink-0 md:h-8 md:w-8" />
           <span className="block text-xl font-extrabold uppercase tracking-normal md:text-2xl">TrueReech</span>
         </Link>
 
