@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import logoAsset from "@/assets/truereech-logo.png.asset.json";
-
 const links = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services/" },
@@ -28,7 +26,7 @@ const SiteHeader = () => {
       <Helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" /></Helmet>
       <div className="wrap flex items-center justify-between px-6 py-4 md:px-10">
         <Link to="/" className="flex items-center gap-2.5 leading-none" onClick={() => setOpen(false)}>
-          <img src={logoAsset.url} alt="TrueReech logo" className="h-7 w-7 shrink-0 md:h-8 md:w-8" />
+          <img src="/images/graph.png" alt="TrueReech logo" className="h-7 w-7 shrink-0 object-contain md:h-8 md:w-8" />
           <span className="block text-xl font-extrabold uppercase tracking-normal md:text-2xl">TrueReech</span>
         </Link>
 
