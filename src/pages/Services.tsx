@@ -74,7 +74,10 @@ const Services = () => (
             <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">Practical ideas for better digital visibility.</h2>
             <p className="prose-body mt-4 max-w-2xl">Read useful guides about content, search, communities, and growing a clearer online presence.</p>
           </div>
-          <Link to="/blog/reddit-marketing-services/" className="shrink-0 bg-foreground px-6 py-3.5 text-sm font-semibold text-background hover:opacity-85">Read the latest blog &rarr;</Link>
+          <div className="flex shrink-0 flex-wrap gap-3">
+            <Link to="/blog/reddit-marketing-services/" className="bg-foreground px-6 py-3.5 text-sm font-semibold text-background hover:opacity-85">Read the latest blog &rarr;</Link>
+            <Link to="/blog/top-aeo-geo-services/" className="border border-foreground px-6 py-3.5 text-sm font-semibold text-foreground hover:bg-foreground hover:text-background">Read AEO &amp; GEO guide &rarr;</Link>
+          </div>
         </div>
       </section>
       <section className="bg-foreground px-6 py-14 text-background md:px-10 md:py-20">
