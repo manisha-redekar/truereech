@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import BlogEnd from "@/components/BlogEnd";
 import { SITE_URL } from "@/lib/site";
 
 const Blog = () => (
@@ -234,6 +235,7 @@ const Blog = () => (
               <p><em>Always review the latest rules of individual subreddits before participating or sharing promotional content.</em></p>
             </section>
           </div>
+          <BlogEnd current="/blog/reddit-marketing-services/" />
         </div>
       </article>
     </main>
