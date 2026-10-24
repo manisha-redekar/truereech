@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import BlogEnd from "@/components/BlogEnd";
 import { SITE_URL } from "@/lib/site";
 
 const AeoGeoBlog = () => (
@@ -37,7 +38,7 @@ const AeoGeoBlog = () => (
             <section>
               <p>When someone searches for a service today, they may use Google, read an industry blog, ask ChatGPT for recommendations, or use Gemini or Perplexity to compare different options. Businesses therefore need to think beyond traditional search rankings and consider how customers discover and evaluate information across search engines and AI-powered tools.</p>
               <p>This is where <strong>Answer Engine Optimization (AEO)</strong> and <strong>Generative Engine Optimization (GEO)</strong> come into the picture.</p>
-              <p>AEO and GEO services help businesses improve the clarity, accessibility, usefulness and discoverability of their online information. Depending on the service, this can involve content improvements, technical SEO, brand information, relevant third-party coverage and monitoring how a business appears in search results and AI-generated answers.</p>
+              <p><Link to="/services/" className="font-semibold text-ink underline decoration-1 underline-offset-4">AEO and GEO services</Link> help businesses improve the clarity, accessibility, usefulness and discoverability of their online information. Depending on the service, this can involve content improvements, technical SEO, brand information, relevant third-party coverage and monitoring how a business appears in search results and AI-generated answers.</p>
               <p>However, AEO and GEO are not shortcuts to guaranteed visibility. No service provider can guarantee that Google, ChatGPT, Gemini or another AI platform will mention, recommend or cite a particular business.</p>
               <p>In this guide, we explain the top 10 types of AEO and GEO services, what each includes, when a business may need them, how results can be measured and how to choose the right provider.</p>
             </section>
@@ -56,7 +57,7 @@ const AeoGeoBlog = () => (
             <section>
               <h2 className="text-2xl leading-tight md:text-3xl">Top 10 AEO and GEO Services</h2>
               <h3 className="text-xl">1. AI Search Visibility Audit</h3>
-              <p>An AI search visibility audit establishes how a business currently appears across selected search engines and AI assistants.</p>
+              <p>An <Link to="/contact/?source=free-audit-top-aeo-geo-services" className="font-semibold text-ink underline decoration-1 underline-offset-4">AI search visibility audit</Link> establishes how a business currently appears across selected search engines and AI assistants.</p>
               <p>Before spending money on optimisation, businesses need to understand their starting position and identify the gaps that matter.</p>
               <h4 className="text-base font-semibold">What does this service include?</h4>
               <ul className="list-disc pl-6"><li>Testing relevant customer questions across selected AI platforms.</li><li>Recording whether the business is mentioned, described accurately or cited as a source.</li><li>Comparing results with relevant competitors.</li><li>Checking whether important business information is missing or inconsistent.</li><li>Reviewing website accessibility, content quality and existing SEO performance.</li><li>Preparing a baseline report with prioritised recommendations.</li></ul>
@@ -68,7 +69,7 @@ const AeoGeoBlog = () => (
               <p>Record the questions tested, platform, date, brand mentions, citations where available, answer accuracy and competitors appearing in the results. AI responses can change between prompts and over time. One successful screenshot is not proof of consistent visibility.</p>
 
               <h3 className="text-xl">2. AEO Content Optimization</h3>
-              <p>AEO content optimization improves existing website content so readers can find answers to their questions without having to interpret vague marketing language.</p>
+              <p>AEO content optimization improves existing <Link to="/services/" className="font-semibold text-ink underline decoration-1 underline-offset-4">website content</Link> so readers can find answers to their questions without having to interpret vague marketing language.</p>
               <p>Many business websites describe their services but fail to explain practical details such as what is included, who the service is for, how the process works or what a customer should expect.</p>
               <h4 className="text-base font-semibold">What does this service include?</h4>
               <ul className="list-disc pl-6"><li>Researching relevant customer questions.</li><li>Writing clear, direct answers to those questions.</li><li>Organising content with descriptive headings.</li><li>Adding definitions, examples, comparisons and useful limitations.</li><li>Improving existing service pages, blogs and FAQs.</li><li>Removing unnecessary repetition and unsupported claims.</li></ul>
@@ -90,7 +91,7 @@ const AeoGeoBlog = () => (
               <p>Track organic impressions, clicks, relevant queries, engagement, enquiries and the performance of related pages over time. The goal is not to publish as many articles as possible. It is to provide useful, distinct information that meets the needs of your audience.</p>
 
               <h3 className="text-xl">4. Technical SEO and AI Crawlability</h3>
-              <p>Technical SEO helps search engines access, crawl, understand and index website content. It is also an important foundation for AI search discovery.</p>
+              <p><Link to="/services/" className="font-semibold text-ink underline decoration-1 underline-offset-4">Technical SEO</Link> helps search engines access, crawl, understand and index website content. It is also an important foundation for AI search discovery.</p>
               <p>A website may contain excellent information, but technical problems can make important pages difficult to discover or display.</p>
               <h4 className="text-base font-semibold">What does this service include?</h4>
               <ul className="list-disc pl-6"><li>Checking page status codes and broken links.</li><li>Reviewing robots.txt and indexing directives.</li><li>Checking XML sitemaps and canonical URLs.</li><li>Identifying redirect problems and duplicate pages.</li><li>Reviewing mobile usability and page performance.</li><li>Ensuring important content is available in readable text.</li><li>Checking access for relevant search crawlers.</li></ul>
@@ -264,6 +265,7 @@ const AeoGeoBlog = () => (
               </ul>
             </section>
           </div>
+          <BlogEnd current="/blog/top-aeo-geo-services/" />
         </div>
       </article>
     </main>
