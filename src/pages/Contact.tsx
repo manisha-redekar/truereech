@@ -29,10 +29,12 @@ const Contact = () => {
     const form = e.currentTarget;
     setStatus("sending");
     try {
+      const data = new FormData(form);
+      data.append("source", new URLSearchParams(window.location.search).get("source") || "contact-page");
       const res = await fetch(FORMSPREE_URL, {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: new FormData(form),
+        body: data,
       });
       if (!res.ok) throw new Error("failed");
       setStatus("sent");
